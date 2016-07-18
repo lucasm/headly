@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flyeed (Alpha)</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-responsive.min.css">
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body ng-app="Flyeed">
+  <div class="container-fluid">
+      <div data-ng-controller="FeedCtrl">
+          <div class="container">
+            <h4>Leitor de Feed RSS com AngularJS e Pesquisa</h4>
+ 
+            <form>
+              <div class="input-prepend">
+                <div class="btn-group">
+                  <button class="btn btn-warning" type="button" tabindex="-1" ng-click="loadFeed($event)">{{loadBtnText}}</button>
+                  <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" ng-click="feedSrc='http://rss.uol.com.br/feed/economia.xml';loadFeed($event)">UOL Economia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://www.band.uol.com.br/rss/noticias.xml';loadFeed($event)">Band News</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://globoesporte.globo.com/servico/semantica/editorias/plantao/feed.rss';loadFeed($event);">Globo Esporte</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://www1.caixa.gov.br/rss/asp/geraXML_rss_loterias.asp?canal=TODOSJOGOS&titulo=Todas%20as%20modalidades';loadFeed($event)">Loterias Caixa</a></li>                  
+                    <li><a href="#" ng-click="feedSrc='http://www.mtv.com.br/services/scenic/feeds/get/rss/mgid:hcx:content:mtvmusic-br.com:7e51eca8-4942-4d64-a180-b020d6719b1a/';loadFeed($event)">MTV Brasil</a></li>
+                  </ul>
+                </div>
+                <input type="text" class="span6" autocomplete="off" placeholder="URL da Feed" data-ng-model="feedSrc" />
+              </div>
+              <div class="input-prepend pull-right">
+                <span class="add-on"><i class=" icon-search"></i></span>contador
+                <input class="span4" type="text" data-ng-model="buscarTexto" placeholder="Buscar Rápida" />
+              </div>
+            </form>
+          </div>
+        
+          <div class="container">
+              <ul class="unstyled">
+                  <span class="badge badge-warning" ng-show="feeds.length > 0">{{(feeds | filter:buscarTexto).length}} Itens</span>
+                                    
+                  <li class="item" ng-repeat="feed in feeds | filter:buscarTexto">                    
+                      <h5><a target="_blank" href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                      <p class="text-left">{{feed.contentSnippet}}</p>                    
+                      <span class="small">{{feed.publishedDate}}</span>
+                  </li>                
+              </ul>            
+          </div>
+      </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+
+  <script type="text/javascript">
+      var App = angular.module('Flyeed', []);
+
+  App.controller("FeedCtrl", ['$scope','FeedService', function ($scope,Feed) {    
+    $scope.loadBtnText="Carregar";
+    $scope.loadFeed=function(e){        
+      Feed.parseFeed($scope.feedSrc).then(function(res){
+        $scope.loadBtnText=angular.element(e.target).text();
+        $scope.feeds=res.data.responseData.feed.entries;
+          //console.log($scope.feeds);
+      });
+    }
+  }]);
+
+  App.factory('FeedService',['$http',function($http){
+    return {
+      parseFeed : function(url){
+        return $http.jsonp('//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + encodeURIComponent(url));
+      }
+    }
+  }]);
+  </script>
+
+</body>
+</html>

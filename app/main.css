@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+* {
+    font-family:roboto,arial,helvetica;
+}
+.small {
+    font-size:11px;
+}
+
+h4 {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+}
+
+span.badge {
+  margin-bottom: 10px;
+}
+
+li.item {
+  display: table;
+  width: 100%;
+  padding: 8px;
+  background-color: #EFEFEF;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-left: 3px solid #EFEFEF;
+  border-right: 3px solid #EFEFEF;
+}
+
+li.item:hover {
+  border-color: #f89406;
+  background-color: #EEEEEE;
+}
+
+li.item h5, li.item p {
+  padding-top: 0;
+  margin-top: 0;
+}
