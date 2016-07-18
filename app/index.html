@@ -30,7 +30,7 @@
                     <li><a href="#" ng-click="feedSrc='http://rss.uol.com.br/feed/economia.xml';loadFeed($event)">UOL Economia</a></li>
                     <li><a href="#" ng-click="feedSrc='http://www.band.uol.com.br/rss/noticias.xml';loadFeed($event)">Band News</a></li>
                     <li><a href="#" ng-click="feedSrc='http://globoesporte.globo.com/servico/semantica/editorias/plantao/feed.rss';loadFeed($event);">Globo Esporte</a></li>
-                    <li><a href="#" ng-click="feedSrc='http://www1.caixa.gov.br/rss/asp/geraXML_rss_loterias.asp?canal=TODOSJOGOS&titulo=Todas%20as%20modalidades';loadFeed($event)">Loterias Caixa</a></li>                  
+                    <li><a href="#" ng-click="feedSrc='http://www1.caixa.gov.br/rss/asp/geraXML_rss_loterias.asp?canal=TODOSJOGOS&titulo=Todas%20as%20modalidades';loadFeed($event)">Loterias Caixa</a></li>
                     <li><a href="#" ng-click="feedSrc='http://www.mtv.com.br/services/scenic/feeds/get/rss/mgid:hcx:content:mtvmusic-br.com:7e51eca8-4942-4d64-a180-b020d6719b1a/';loadFeed($event)">MTV Brasil</a></li>
                   </ul>
                 </div>
@@ -59,30 +59,8 @@
 
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
-
-  <script type="text/javascript">
-      var App = angular.module('Flyeed', []);
-
-  App.controller("FeedCtrl", ['$scope','FeedService', function ($scope,Feed) {    
-    $scope.loadBtnText="Carregar";
-    $scope.loadFeed=function(e){        
-      Feed.parseFeed($scope.feedSrc).then(function(res){
-        $scope.loadBtnText=angular.element(e.target).text();
-        $scope.feeds=res.data.responseData.feed.entries;
-          //console.log($scope.feeds);
-      });
-    }
-  }]);
-
-  App.factory('FeedService',['$http',function($http){
-    return {
-      parseFeed : function(url){
-        return $http.jsonp('//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + encodeURIComponent(url));
-      }
-    }
-  }]);
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
