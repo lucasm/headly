@@ -1,0 +1,279 @@
+/*
+    MOBILE
+*/
+
+.nav-button {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  bottom: 24px;
+  right: 24px;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background: #fff;
+  /* reset button style */
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+}
+.nav-button span {
+  /* central dot */
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.nav-button span::before, .nav-button span::after {
+  /* bottom and top dots */
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  border-radius: inherit;
+}
+.nav-button span::before {
+  top: -9px;
+}
+.nav-button span::after {
+  bottom: -9px;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav-button { display: none; }
+}
+
+/* -------------------------------- 
+
+Vertical navigation
+
+-------------------------------- */
+.vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 24px;
+  bottom: 24px;
+  width: 90%;
+  padding: 10px 0;
+  max-width: 200px;
+  max-height: 90%;
+  text-align: left;
+  overflow-y: auto;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0;
+  background-color: #fff;
+}
+.vertical-nav a {
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 4rem;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+/*  border-bottom: 1px solid rgba(58, 44, 65, 0.1);*/
+}
+.vertical-nav a.active {
+  color: #000;
+}
+.vertical-nav.open {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-overflow-scrolling: touch;
+}
+.vertical-nav.open + .nav-button {
+  background-color: transparent;
+}
+.vertical-nav.open + .nav-button span {
+  background-color: transparent;
+}
+.vertical-nav.open + .nav-button span::before, .vertical-nav.open + .nav-button span::after {
+  /* transform dots in 'X' icon */
+  height: 2px;
+  width: 20px;
+  border-radius: 0;
+  left: -8px;
+}
+.vertical-nav.open + .nav-button span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 2px;
+}
+.vertical-nav.open + .nav-button span::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  bottom: 0;
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  .vertical-nav {
+    right: 0;
+    top: 0;
+    bottom: auto;
+    height: 100%;
+    width: 70px;
+    padding: 0;
+    max-width: none;
+    max-height: none;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    background-color: transparent;
+    display: table;
+  }
+
+  .no-touch .vertical-nav:hover a, .touch .vertical-nav a {
+    font-size: 3rem;
+  }
+
+  .vertical-nav ul {
+    /* vertically align <ul> inside <nav> */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    list-style-type: none;
+  }
+  .vertical-nav a {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    border-bottom: none;
+    color: transparent;
+    background-color: transparent;
+    text-align: center;
+  }
+  .vertical-nav a:hover, .vertical-nav a.active:hover {
+    color: #000;
+  }
+  .vertical-nav a.active {
+    color: transparent;
+  }
+
+  .vertical-nav a span {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    text-align: right;
+    background: transparent;
+  }
+
+  .vertical-nav a::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: -2px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: all 0.25s;
+  }
+
+  .vertical-nav a.active::before, .no-touch .vertical-nav a:hover::before {
+    background-color: #000;
+  }
+
+}
+
+/* No JS */
+@media only screen and (min-width: 800px) {
+
+  .no-js .nav-button {
+    display: none;
+  }
+
+  .no-js .vertical-nav {
+    position: static;
+    height: auto;
+    width: 100%;
+    max-width: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .no-js .vertical-nav::before {
+    display: none;
+  }
+  .no-js .vertical-nav ul::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .no-js .vertical-nav li {
+    display: inline-block;
+    float: left;
+  }
+  .no-js .vertical-nav a {
+    padding: 0 1em;
+    margin: 1.5em 1em;
+    color: #fff;
+  }
+  .no-js .vertical-nav a.active {
+    color: #000;
+  }
+  .no-js .vertical-nav a::after, .no-js .vertical-nav a::before {
+    display: none;
+  }
+  .no-js .vertical-nav .label {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+}

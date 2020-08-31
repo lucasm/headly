@@ -1,0 +1,32 @@
+{
+  "name": "headlyne",
+  "version": "1.0.0",
+  "description": "News reader for critical sense, with fact-checking.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmezs/headlyne.git"
+  },
+  "keywords": [
+    "news",
+    "reader",
+    "feed",
+    "headlines"
+  ],
+  "author": "Lucas Menezes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasmezs/headlyne/issues"
+  },
+  "homepage": "https://github.com/lucasmezs/headlyne#readme",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "headroom.js": "^0.11.0",
+    "jquery": "^3.5.1",
+    "modernizr": "^3.11.3",
+    "pace-js": "^1.0.2"
+  }
+}
