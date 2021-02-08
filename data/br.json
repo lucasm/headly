@@ -1,0 +1,54 @@
+{
+    "noticias": [
+        {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
+        {"name": "El Pais", "feed": "https://feeds.elpais.com/mrss-s/pages/ep/site/brasil.elpais.com/portada"},
+        {"name": "CartaCapital", "feed": "https://www.cartacapital.com.br/feed/"},
+        {"name": "G1", "feed": "http://pox.globo.com/rss/g1/"},
+        {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "Veja", "feed": "https://veja.abril.com.br/feed/"},
+        {"name": "Estadao", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:estadao.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "Nexo Jornal", "feed": "https://www.nexojornal.com.br/rss.xml"},
+        {"name": "The Intercept", "feed": "https://theintercept.com/feed/?lang=pt"},
+        {"name": "Revista Forum", "feed": "https://revistaforum.com.br/feed/"},
+        {"name": "Agencia Publica", "feed": "https://apublica.org/category/portugues/feed/"},
+        {"name": "Jacobin", "feed": "https://jacobin.com.br/feed/"},
+        {"name": "O Globo", "feed": "http://oglobo.globo.com/rss/plantao.xml"},
+        {"name": "Le Monde Diplomatique", "feed": "https://diplomatique.org.br/feed/"}
+    ],
+    "tech": [
+        {"name": "Tecnoblog", "feed": "https://feed.tecnoblog.net/feed/"},
+        {"name": "Canaltech", "feed": "http://feeds2.feedburner.com/canaltechbr"},
+        {"name": "TecMundo", "feed": "http://www.baixaki.com.br/rss/tecnologia.xml"},
+        {"name": "Olhar Digital", "feed": "https://olhardigital.com.br/rss"},
+        {"name": "Oficina da Net", "feed": "https://www.oficinadanet.com.br/rss/geral"},
+        {"name": "The Hack", "feed": "https://thehack.com.br/rss/"},
+        {"name": "Computerworld", "feed": "https://computerworld.com.br/feed/"}  
+    ],
+    "financas": [
+        {"name": "Exame", "feed": "https://exame.com/feed/"},
+        {"name": "Infomoney", "feed": "https://www.infomoney.com.br/feed/"},
+        {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
+        {"name": "Valor", "feed": "http://www.valor.com.br/rss"},
+        {"name": "Money Times", "feed": "https://www.moneytimes.com.br/feed/"}
+    ],
+    "esportes": [
+        {"name": "Lance", "feed": "https://www.lance.com.br/rss/"}
+    ],
+    "cultura": [
+        {"name": "Omelete", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:omelete.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"}
+    ],
+    "ciencia": [
+        {"name": "Superinteressante", "feed": "https://super.abril.com.br/feed/"},
+        {"name": "Revista Galileu", "feed": "http://revistagalileu.globo.com/rss/ultimas/feed.xml"},
+        {"name": "Ciencia Hoje", "feed": "https://cienciahoje.org.br/feed/"},
+        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"}
+    ],
+    "checagem": [
+        {"name": "Aos Fatos", "feed": "https://aosfatos.org/noticias/feed/"},
+        {"name": "Agencia Lupa", "feed": "https://piaui.folha.uol.com.br/lupa/feed/"},
+        {"name": "Fato ou Fake", "feed": "http://pox.globo.com/rss/g1/fato-ou-fake/"},
+        {"name": "Projeto Comprova", "feed": "https://projetocomprova.com.br/feed/"}
+    ]
+    
+}

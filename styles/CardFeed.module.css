@@ -1,0 +1,111 @@
+/* Feed Cards */
+.feed {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.feed ul {
+    float: left;
+    height: auto;
+    width: 100%;
+    max-width: 31.333%;
+    margin: 1%;
+	padding: 5.5rem 4vw 4rem;
+	text-align: left;
+	list-style: none;
+    background-position: 4vw 3rem;
+	background-size: auto 2.75rem;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, .1);
+	box-sizing: border-box;
+	transition: all .25s;
+}
+.feed ul h3 {
+	display: none;
+	font-size: 0;
+	color: transparent;
+}
+.feed a {
+    color: #fff;
+}
+.feed a:hover, .feed a:focus {
+	color: #000;
+}
+.feed ul li a:hover, .feed ul li a:focus {
+	opacity: 1 !important;
+}
+.feed ul li {
+    margin: 2rem 0 0;
+    font-weight: 700;
+    font-size: 1.75vw;
+    line-height: 1.2;
+    padding: 0;
+}
+.feed ul li:nth-child(2),
+.feed ul li:nth-child(4) {
+	font-size: 1.75vw;
+}
+.feed ul li:nth-child(2) a,
+.feed ul li:nth-child(4) a {
+	opacity: 0.5;
+}
+
+/* Featured Top */
+.feed ul:first-child { 
+	max-width: 100%;
+	margin: 1% 0 5%;
+    padding: 5rem 8vw 4rem;
+    text-align: center;
+    background-position: center 4rem;
+    background-color: transparent;
+	border-top: 1.25rem solid #fff;
+	border-left: 1.25rem solid #fff;
+	border-right: 1.25rem solid #fff;
+}
+.feed ul:first-child li {
+	margin: 4rem 0 0;
+}
+.feed ul:first-child li:nth-child(1) {
+	font-size: 4.75vw;
+}
+.feed ul:first-child li:nth-child(2),
+.feed ul:first-child li:nth-child(3) {
+	font-size: 2vw;
+	width: 40%;
+	float: left;
+}
+.feed ul:first-child li:nth-child(2),
+.feed ul:first-child li:nth-child(3) {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Duos */
+.feed ul:nth-child(2),
+.feed ul:nth-child(3),
+.feed ul:nth-child(7),
+.feed ul:nth-child(8),
+.feed ul:nth-child(12),
+.feed ul:nth-child(13) {
+	max-width: 48%;
+}
+.feed ul:nth-child(2) li:nth-child(1),
+.feed ul:nth-child(3) li:nth-child(1),
+.feed ul:nth-child(7) li:nth-child(1),
+.feed ul:nth-child(8) li:nth-child(1),
+.feed ul:nth-child(12) li:nth-child(1),
+.feed ul:nth-child(13) li:nth-child(1) {
+	font-size: 2.5vw;
+}
+
+/* Minis */
+.feed ul:nth-child(4) li:nth-child(1),
+.feed ul:nth-child(5) li:nth-child(1),
+.feed ul:nth-child(6) li:nth-child(1),
+.feed ul:nth-child(9) li:nth-child(1),
+.feed ul:nth-child(10) li:nth-child(1),
+.feed ul:nth-child(11) li:nth-child(1) {
+	font-size: 2vw;
+}
