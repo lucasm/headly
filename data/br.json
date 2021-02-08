@@ -3,9 +3,9 @@
         {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
         {"name": "El Pais", "feed": "https://feeds.elpais.com/mrss-s/pages/ep/site/brasil.elpais.com/portada"},
-        {"name": "G1", "feed": "http://pox.globo.com/rss/g1/"},
-        {"name": "CartaCapital", "feed": "https://www.cartacapital.com.br/feed/"},
         {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "G1", "feed": "https://pox.globo.com/rss/g1/"},
+        {"name": "CartaCapital", "feed": "https://www.cartacapital.com.br/feed/"},
         {"name": "Veja", "feed": "https://veja.abril.com.br/feed/"},
         {"name": "Estadao", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:estadao.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "Nexo Jornal", "feed": "https://www.nexojornal.com.br/rss.xml"},
@@ -20,34 +20,47 @@
     "checagem": [
         {"name": "Aos Fatos", "feed": "https://aosfatos.org/noticias/feed/"},
         {"name": "Agencia Lupa", "feed": "https://piaui.folha.uol.com.br/lupa/feed/"},
-        {"name": "Fato ou Fake", "feed": "http://pox.globo.com/rss/g1/fato-ou-fake/"}
+        {"name": "Fato ou Fake", "feed": "https://pox.globo.com/rss/g1/fato-ou-fake/"}
     ],
     "tech": [
         {"name": "Tecnoblog", "feed": "https://feed.tecnoblog.net/feed/"},
         {"name": "Canaltech", "feed": "http://feeds2.feedburner.com/canaltechbr"},
         {"name": "TecMundo", "feed": "http://www.baixaki.com.br/rss/tecnologia.xml"},
         {"name": "Olhar Digital", "feed": "https://olhardigital.com.br/rss"},
-        {"name": "Oficina da Net", "feed": "https://www.oficinadanet.com.br/rss/geral"},
+        {"name": "Computerworld", "feed": "https://computerworld.com.br/feed/"},
         {"name": "The Hack", "feed": "https://thehack.com.br/rss/"},
-        {"name": "Computerworld", "feed": "https://computerworld.com.br/feed/"}  
+        {"name": "Oficina da Net", "feed": "https://www.oficinadanet.com.br/rss/geral"}
     ],
     "financas": [
         {"name": "Exame", "feed": "https://exame.com/feed/"},
-        {"name": "Infomoney", "feed": "https://www.infomoney.com.br/feed/"},
-        {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
         {"name": "Valor", "feed": "http://www.valor.com.br/rss"},
+        {"name": "Infomoney", "feed": "https://www.infomoney.com.br/feed/"},
+        {"name": "Investing", "feed": "https://br.investing.com/rss/news.rss"},
+        {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
         {"name": "Money Times", "feed": "https://www.moneytimes.com.br/feed/"}
     ],
     "esportes": [
-        {"name": "Lance", "feed": "https://www.lance.com.br/rss/"}
+        {"name": "ge", "feed": "http://pox.globo.com/rss/ge/"},
+        {"name": "Lance", "feed": "https://www.lance.com.br/rss/"},
+        {"name": "Gazeta Esportiva", "feed": "https://www.gazetaesportiva.com/feed/"},
+        {"name": "TNT Sports", "feed": "https://tntsports.com.br/rss/feed.xml"},
+        {"name": "ESPN", "feed": "https://www.espn.com.br/rss/pauloviniciuscoelho"}
     ],
     "cultura": [
-        {"name": "Omelete", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:omelete.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"}
+        {"name": "Omelete", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:omelete.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "AdoroCinema", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:adorocinema.com&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "TMDQA", "feed": "https://www.tenhomaisdiscosqueamigos.com/feed/"}
+    ],
+    "geek": [
+        {"name": "IGN", "feed": "https://br.ign.com/feed.xml"}
     ],
     "ciencia": [
-        {"name": "Superinteressante", "feed": "https://super.abril.com.br/feed/"},
         {"name": "Revista Galileu", "feed": "http://revistagalileu.globo.com/rss/ultimas/feed.xml"},
-        {"name": "Ciencia Hoje", "feed": "https://cienciahoje.org.br/feed/"},
-        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"}
+        {"name": "Superinteressante", "feed": "https://super.abril.com.br/feed/"},
+        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"},
+        {"name": "Ciencia Hoje", "feed": "https://cienciahoje.org.br/feed/"}
+    ],
+    "discover": [
+        {"name": "reddit", "feed": "https://www.reddit.com/r/brasil/.rss"}
     ]
 }

@@ -79,7 +79,7 @@ const getFeedById = (callback) => {
 
 		var a=[];
 
-		const removes=/ - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete/;
+		const removes=/ - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete| - AdoroCinema/;
 
 		for ( var i in feed.items.slice(0, 3) ) {
 			a.push({

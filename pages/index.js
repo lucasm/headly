@@ -10,7 +10,6 @@ export default function Home() {
 
     <main>
 
-    
         <section id="news" className="red">
             <div className="feedSection">
 
@@ -21,10 +20,10 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="checking" className="black">
+        <section id="check" className="black">
             <div className="feedSection">
 
-                <h2>Fact-Check</h2>
+                <h2>Check</h2>
                 <Card country="us" category="checking"/>
 
             </div>
@@ -39,54 +38,55 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="business" className="green">
+        <section id="biz" className="green">
             <div className="feedSection">
 
-                <h2>Business</h2>
+                <h2>Biz</h2>
                 <Card country="us" category="business"/>
 
             </div>
         </section>
 
-        <section id="sports" className="yellow">
+        <section id="sport" className="yellow">
             <div className="feedSection">
 
-                <h2>Sports</h2>
+                <h2>Sport</h2>
                 <Card country="us" category="sports"/>
 
             </div>
         </section>
 
-        <section id="culture" className="purple">
+        <section id="cult" className="purple">
             <div className="feedSection">
 
-                <h2>Culture</h2>
+                <h2>Cult</h2>
                 <Card country="us" category="culture"/>
  
             </div>
         </section>
 
-        <section id="gaming" className="pink">
+        <section id="geek" className="pink">
             <div className="feedSection">
 
-                <h2>Gaming</h2> 
+                <h2>Geek</h2> 
                 <Card country="us" category="gaming"/>
+
             </div>
         </section>
 
-        <section id="science" className="aqua">
+        <section id="sci" className="aqua">
             <div className="feedSection">
 
-                <h2>Science</h2>
+                <h2>Sci</h2>
                 <Card country="us" category="science"/>
 
             </div>
         </section>
 
-        <section id="explore" className="orange">
+        <section id="dscvr" className="orange">
             <div className="feedSection">
 
-                <h2>Discover</h2>
+                <h2>Dscvr</h2>
                 <Card country="us" category="discover"/>
 
             </div>

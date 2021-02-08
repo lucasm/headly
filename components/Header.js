@@ -40,7 +40,7 @@ const Header = () => (
 		<nav>
 			<ul>
 				<li><a href="https://github.com/lucasmezs/headlyne" target="_blank">About Headlyne</a></li>
-				<li><Link href="#"><a>Contribute</a></Link></li>
+				<li><a href="https://github.com/lucasmezs/headlyne/issues" target="_blank">Contribute</a></li>
 			</ul>
 		</nav>
 		<div class="layer"></div>

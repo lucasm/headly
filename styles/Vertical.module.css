@@ -167,9 +167,9 @@ Vertical navigation
     display: table;
   }
 
-  .no-touch .verticalNav:hover a, .touch .verticalNav a {
+  /* .no-touch .verticalNav:hover a, .touch .verticalNav a {
     font-size: 3rem;
-  }
+  } */
 
   .verticalNav ul {
     /* vertically align <ul> inside <nav> */
@@ -197,14 +197,9 @@ Vertical navigation
     font-size: 2rem;
     color: #000;
   }
-  .verticalNav a:hover, .verticalNav a.active:hover {
-    font-size: 2rem;
-    color: #000;
-  }
   .verticalNav a.active {
     color: #fff;
   }
-
   .verticalNav a span {
     position: absolute;
     top: 0;
@@ -212,7 +207,6 @@ Vertical navigation
     text-align: right;
     background: transparent;
   }
-
   .verticalNav a::before {
     content: '';
     position: relative;
@@ -227,7 +221,7 @@ Vertical navigation
   }
 
   .verticalNav a.active::before, .no-touch .verticalNav a:hover::before {
-    background-color: #000;
+    background: #000;
   }
 
 }

@@ -8,14 +8,14 @@ import styles from '../styles/Vertical.module.css';
         <div className={styles.verticalNav}>
           <ul>
             <li><a href="#news" class="active"><span className={styles.label}>News</span></a></li>
-            <li><a href="#checking"><span className={styles.label}>Checking</span></a></li>
+            <li><a href="#check"><span className={styles.label}>Check</span></a></li>
             <li><a href="#tech"><span className={styles.label}>Tech</span></a></li>
-            <li><a href="#business"><span className={styles.label}>Business</span></a></li>
-            <li><a href="#sports"><span className={styles.label}>Sports</span></a></li>
-            <li><a href="#culture"><span className={styles.label}>Culture</span></a></li>
-            <li><a href="#gaming"><span className={styles.label}>Gaming</span></a></li>
-            <li><a href="#science"><span className={styles.label}>Science</span></a></li>
-            <li><a href="#explore"><span className={styles.label}>Discover</span></a></li>
+            <li><a href="#biz"><span className={styles.label}>Biz</span></a></li>
+            <li><a href="#sport"><span className={styles.label}>Sport</span></a></li>
+            <li><a href="#cult"><span className={styles.label}>Cult</span></a></li>
+            <li><a href="#geek"><span className={styles.label}>Geek</span></a></li>
+            <li><a href="#sci"><span className={styles.label}>Sci</span></a></li>
+            <li><a href="#dscvr"><span className={styles.label}>Dscvr</span></a></li>
           </ul>
         </div>
 
