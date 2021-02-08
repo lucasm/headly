@@ -93,3 +93,5 @@ export default function Home() {
 
     </PageLayout>)
 }
+
+console.log(process.env.API_URL);

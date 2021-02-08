@@ -15,7 +15,7 @@ async function fetchFeeds(category) {
         console.log('*** CALLING API ***', category);
         requested = category;
 
-        fetch("http://localhost:3000/api/us?category=" + category).then(function(response) {
+        fetch("/api/us?category=" + category).then(function(response) {
             response.json().then(function(data){
 
                 // store feed data in array by category
@@ -38,7 +38,7 @@ export default function CardGetFeeds(props) {
 
   React.useEffect(() => {
 
-   fetch("http://localhost:3000/api/feed?country="+props.country+"&category="+props.category+"&id="+props.id)
+   fetch("/api/feed?country="+props.country+"&category="+props.category+"&id="+props.id)
    .then((response) => {
       return response.json();
    })
