@@ -12,15 +12,16 @@
     width: 100%;
     max-width: 31.333%;
     margin: 1%;
-	padding: 5.5rem 4vw 4rem;
+	padding: 5.5rem 4.5vw 4rem;
 	text-align: left;
 	list-style: none;
-    background-position: 4vw 3rem;
+    background-position: 4.5vw 3rem;
 	background-size: auto 2.75rem;
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, .1);
 	box-sizing: border-box;
 	transition: all .25s;
+	border-radius: 1rem;
 }
 .feed ul h3 {
 	display: none;

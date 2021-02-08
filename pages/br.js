@@ -19,6 +19,15 @@ export default function Home() {
             </div>
         </section>
 
+        <section id="checking" className="black">
+            <div className="feedSection">
+
+                <h2>Checagem</h2>
+                <Card country="br" category="checagem"/>
+
+            </div>
+        </section>
+
         <section id="tech" className="blue">
             <div className="feedSection">
 
@@ -76,15 +85,6 @@ export default function Home() {
             <div className="feedSection">
 
                 <h2>Descubra</h2>
-
-            </div>
-        </section>
-
-        <section id="check" className="black">
-            <div className="feedSection">
-
-                <h2>Checagem</h2>
-                <Card country="br" category="checagem"/>
 
             </div>
         </section>

@@ -30,15 +30,15 @@
         {"name": "Gizmodo", "feed": "https://gizmodo.com/rss"}
     ],
     "business": [
-        {"name": "Financial Times", "feed": "https://www.ft.com/world?format=rss"},
-        {"name": "The Economist", "feed": "https://www.economist.com/finance-and-economics/rss.xml"},
+        {"name": "Bloomberg", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberg.com&ceid=US:en&hl=en-US&gl=US"},
         {"name": "Fortune", "feed": "https://fortune.com/feed"},
+        {"name": "Financial Times", "feed": "https://www.ft.com/world?format=rss"},
         {"name": "WSJ", "feed": "https://feeds.a.dj.com/rss/RSSWorldNews.xml"},
         {"name": "Inc", "feed": "https://www.inc.com/rss/"},
-        {"name": "Bloomberg", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberg.com&ceid=US:en&hl=en-US&gl=US"},
         {"name": "Forbes", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:forbes.com&ceid=US:en&hl=en-US&gl=US"},
         {"name": "Business Insider", "feed": "https://www.businessinsider.com/rss"},
-        {"name": "CNBC", "feed": "https://www.cnbc.com/id/100003114/device/rss/rss.html"}
+        {"name": "CNBC", "feed": "https://www.cnbc.com/id/100003114/device/rss/rss.html"},
+        {"name": "The Economist", "feed": "https://www.economist.com/finance-and-economics/rss.xml"}
     ],
     "sports": [
         {"name": "ESPN", "feed": "https://www.espn.com/espn/rss/news"},

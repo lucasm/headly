@@ -77,20 +77,16 @@ const getFeedById = (callback) => {
 			  }]);
 		}
 
-		var a = [];
+		var a=[];
+
+		const removes=/ - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete/;
 
 		for ( var i in feed.items.slice(0, 3) ) {
 			a.push({
-				"title": feed.items[i].title.replace(/ - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete/, ""),
+				"title": feed.items[i].title.replace(removes, ""),
 				"link": feed.items[i].link + "?ref=headlyne"
 			});
 		}
-
-		// var x = [{
-		// 	"id": feedId,
-		// 	"feedName" : feed.title,
-		// 	"feedItems": a
-		// }];
 
 		console.log(a);
 		return callback(a);
