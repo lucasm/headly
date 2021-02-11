@@ -6,7 +6,8 @@ import CardGetFeeds from '../components/CardGetFeeds';
 // turn name into ID 
 function generateId(string) {
     let lovercase = string.toLowerCase();
-    let replaceSpaces = lovercase.replace(/\s/g, '-')
+    let intFlag = lovercase.replace(/_/g, '');
+    let replaceSpaces = intFlag.replace(/\s/g, '-');
     
     return replaceSpaces;
 }
@@ -22,12 +23,11 @@ export default function Card(props) {
 
     <div className={styles.feed}>
         { feedCountry[props.category].map(item =>(
-            <ul id={ generateId(item.name) } style={{backgroundImage:'url("/images/logos/'+generateId(item.name)+'.svg")'}} key={ item.name }>
-            
-                <CardGetFeeds country={props.country} category={props.category} id={item.name}/>
+            <ul id={ generateId(item.name) } style={{backgroundImage:'url(/images/logos/'+generateId(item.name)+'.svg)'}} key={ item.name }>
+                <h3>{item.name}</h3>
 
+                <CardGetFeeds country={props.country} category={props.category} id={item.name}/>
             </ul>
         )) }
     </div>
-
 )}

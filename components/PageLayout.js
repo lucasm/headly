@@ -11,7 +11,7 @@ export default function PageLayout(props) {
     <Head>
 		<title>{props.title}</title>
 		<meta name="description" content={props.description}/>
-		<meta name="author" content="Headlyne"/>
+		<meta name="author" content="Lucas Menezes"/>
 		<link rel="icon" href="/favicon.ico"/>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -19,13 +19,13 @@ export default function PageLayout(props) {
 
 		<meta name="theme-color" content="#fff"/>
 		<meta name="mobile-web-app-capable" content="yes"/>
-		<meta name="application-name" content="Headlyne"/>
+		<meta name="application-name" content="Headly"/>
 		<link rel="icon" sizes="192x192" type="image/png" href="images/icons/icon-192x192.png"/>
 		<link rel="manifest" href="manifest.json"/>
 
 		<meta name="apple-mobile-web-app-capable" content="yes"/>
 		<meta name="apple-mobile-web-app-status-bar-style" content="translucent"/>
-		<meta name="apple-mobile-web-app-title" content="Headlyne"/>
+		<meta name="apple-mobile-web-app-title" content="Headly"/>
 		<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png"/>
 		<link rel="apple-touch-icon" sizes="167x167" href="images/icons/apple-touch-icon-167x167.png"/>
 		<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png"/>
@@ -36,44 +36,64 @@ export default function PageLayout(props) {
 
 		<meta name="msapplication-tap-highlight" content="no"/>
 
-		<meta itemprop="name" content="Headlyne"/>
+		<meta itemprop="name" content="Headly"/>
 		<meta itemprop="description" content={props.description}/>
-		<meta itemprop="image" content="https://headlyne.vercel.app/images/headlyne-share.png"/>
+		<meta itemprop="image" content="https://headly.app/images/headly-share.png"/>
 
-		<meta property="og:title" content="Lucas Menezes"/>
+		<meta property="og:title" content="Headly"/>
 		<meta property="og:description" content={props.description}/>
-		<meta property="og:image" content="https://headlyne.vercel.app/images/headlyne-share.png"/>
+		<meta property="og:image" content="https://headly.app/images/headly-share.png"/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="630"/>
-		<meta property="og:site_name" content="Headlyne"/>
-		<meta property="og:url" content="https://headlyne.vercel.app/"/>
+		<meta property="og:site_name" content="Headly"/>
+		<meta property="og:url" content="https://headly.app/"/>
 		<meta property="og:type" content="website"/>
 
 		<meta name="twitter:card" content="summary_large_image"/>
-		<meta name="twitter:title" content="Headlyne"/>
+		<meta name="twitter:title" content="Headly"/>
 		<meta name="twitter:description" content={props.description}/>
-		<meta name="twitter:image" content="https://headlyne.vercel.app/images/headlyne-share.png"></meta>
+		<meta name="twitter:image" content="https://headly.app/images/headly-share.png"></meta>
       
-		{/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZFVF9EE79"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-89JR74CJC7"></script>
 		<script
 			dangerouslySetInnerHTML={{
 			__html: `
 				window.dataLayer = window.dataLayer || [];
 				function gtag(){dataLayer.push(arguments);}
 				gtag('js', new Date());
-		
-				gtag('config', 'G-8ZFVF9EE79'); 
+			
+				gtag('config', 'G-89JR74CJC7');
 				`,
 			}}
-		></script> */}
-
+		></script>
+		<script
+		dangerouslySetInnerHTML={{
+			__html: `
+			(function(c,l,a,r,i,t,y){
+				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+			})(window, document, "clarity", "script", "5d4q9fkiga");
+			`,
+		}}
+		></script>
     </Head>
 
-    <Header/>
+    <Header
+		about={props.aboutHeader}
+		contribute={props.contribute}
+	/>
 
       {props.children}
 
-    <Footer/>
+    <Footer
+		title={props.title}
+		legal={props.legal}
+		about={props.about}
+		privacy={props.privacy}
+        feedback={props.feedback}
+		edition={props.edition}
+	/>
   </div>
 )}
 

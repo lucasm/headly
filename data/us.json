@@ -12,10 +12,10 @@
         {"name": "The Intercept", "feed": "https://theintercept.com/feed/?lang=en"},
         {"name": "Aljazeera", "feed": "http://www.aljazeera.com/xml/rss/all.xml"}
     ],
-    "checking": [
+    "check": [
         {"name": "AFP", "feed": "https://factcheck.afp.com/rss.xml"},
-        {"name": "FactCheck", "feed": "https://www.factcheck.org/feed/"},
-        {"name": "PolitiFact", "feed": "https://www.politifact.com/rss/factchecks/"}
+        {"name": "PolitiFact", "feed": "https://www.politifact.com/rss/factchecks/"},
+        {"name": "FactCheck", "feed": "https://www.factcheck.org/feed/"}
     ],
     "tech": [
         {"name": "The Verge", "feed": "http://www.theverge.com/rss/index.xml"},
@@ -29,7 +29,7 @@
         {"name": "Mashable", "feed": "https://mashable.com/rss/"},
         {"name": "Gizmodo", "feed": "https://gizmodo.com/rss"}
     ],
-    "business": [
+    "biz": [
         {"name": "Bloomberg", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberg.com&ceid=US:en&hl=en-US&gl=US"},
         {"name": "Fortune", "feed": "https://fortune.com/feed"},
         {"name": "Financial Times", "feed": "https://www.ft.com/world?format=rss"},
@@ -40,7 +40,7 @@
         {"name": "CNBC", "feed": "https://www.cnbc.com/id/100003114/device/rss/rss.html"},
         {"name": "The Economist", "feed": "https://www.economist.com/finance-and-economics/rss.xml"}
     ],
-    "sports": [
+    "sport": [
         {"name": "ESPN", "feed": "https://www.espn.com/espn/rss/news"},
         {"name": "FOX Sports", "feed": "https://api.foxsports.com/v1/rss"},
         {"name": "Yahoo Sports", "feed": "https://sports.yahoo.com/rss/"},
@@ -48,7 +48,7 @@
         {"name": "BBC Sport", "feed": "https://feeds.bbci.co.uk/sport/rss.xml"},
         {"name": "Bleacher Report", "feed": "https://bleacherreport.com/articles/feed"}
     ],
-    "culture": [
+    "cult": [
         {"name": "Pitchfork", "feed": "https://pitchfork.com/feed/feed-news/rss"},
         {"name": "Billboard", "feed": "https://www.billboard.com/feed/"},
         {"name": "AV Club", "feed": "https://www.avclub.com/rss"},
@@ -57,13 +57,13 @@
         {"name": "Rolling Stone", "feed": "https://www.rollingstone.com/feed/"},
         {"name": "Vice", "feed": "https://www.vice.com/en/rss"}
     ],
-    "gaming": [
+    "geek": [
         {"name": "IGN", "feed": "http://feeds.ign.com/ign/all"},
         {"name": "Kotaku", "feed": "https://kotaku.com/rss"},
         {"name": "GameSpot", "feed": "https://www.gamespot.com/feeds/mashup/"},
         {"name": "Polygon", "feed": "https://www.polygon.com/rss/index.xml"}
     ],
-    "science": [
+    "sci": [
         {"name": "Nature", "feed": "http://feeds.nature.com/nature/rss/current"},
         {"name": "Discover", "feed": "http://feeds.feedburner.com/AllDiscovermagazinecomContent"},
         {"name": "Science Magazine", "feed": "https://www.sciencemag.org/rss/news_current.xml"},
@@ -73,11 +73,11 @@
         {"name": "Scientific American", "feed": "http://rss.sciam.com/ScientificAmerican-Global"},
         {"name": "LiveScience", "feed": "https://www.livescience.com/feeds/all"}
     ],
-    "discover": [
+    "dscvr": [
         {"name": "Medium", "feed": "https://medium.com/feed/tag/popular"},
         {"name": "reddit", "feed": "https://www.reddit.com/r/all/top/.rss"},
-        {"name": "Digg", "feed": "http://digg.com/rss/index.xml"},
         {"name": "Longform", "feed": "https://longform.org/feed.rss"},
+        {"name": "Digg", "feed": "http://digg.com/rss/index.xml"},
         {"name": "Upworthy", "feed": "https://www.upworthy.com/feeds/feed.rss"},
         {"name": "Product Hunt", "feed": "https://www.producthunt.com/feed"}
     ]

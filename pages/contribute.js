@@ -2,9 +2,9 @@
 
 import PageLayout from '../components/PageLayout'
 
-export default function PageAbout() {
+export default function PageContribute() {
   return (
-    <PageLayout title="About - Headly" description="News reader app for the critical sense.">
+    <PageLayout title="Contribute - Headly" description="News reader app for the critical sense.">
 
  
         <section class="fullscreen">

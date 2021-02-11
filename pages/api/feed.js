@@ -73,7 +73,7 @@ const getFeedById = (callback) => {
 			console.log(err);
 			return callback([{
 				"title": "Error fetching feed, click to send feeback",
-				"link": "mailto:feedback@lucasm.dev"
+				"link": "mailto:feedback@headly.app"
 			  }]);
 		}
 
@@ -84,7 +84,7 @@ const getFeedById = (callback) => {
 		for ( var i in feed.items.slice(0, 3) ) {
 			a.push({
 				"title": feed.items[i].title.replace(removes, ""),
-				"link": feed.items[i].link + "?ref=headlyne"
+				"link": feed.items[i].link + "?ref=headly_app"
 			});
 		}
 
