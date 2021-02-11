@@ -14,16 +14,16 @@ A news reader for the critical sense. Headlines, fact-checking and opinions from
 
 Headly encourages peoples critical sense with news without algorithm filters.
 
-- Newest news headlines, fact-checking and opinions.
-- Trusted journalism sources, with strong focus on critical sense, democracy, human rights and liberty of expression to fight against misinformation and any type of censorship.
-- Accessible app, fast in slow internet connections and available by country editions.
+- Newest — news headlines, fact-checking and opinions.
+- Trusted — journalism sources selected by community with strong focus on critical sense, democracy, human rights and liberty of expression to fight against misinformation and any type of censorship.
+- Accessible — fast app in slow internet connections and available by country editions.
 
 ### App
 
 Headly is built with Next.js framework.
 
-- Front-end: SPA `/pages/index.js` with `/components`
-- Back-end: API `/pages/api/feed.js` to pre-process RSS/XML feeds
+- Frontend: SPA `/pages/index.js` with `/components`
+- Backend: API `/pages/api/feed.js` to pre-process RSS/XML feeds
 - Locales: files `/locales/ll-LL.js` (en, pt-BR...) with translations and `/data/cc.json` with feeds parameters
 
 ### Licences
@@ -31,6 +31,6 @@ Headly is built with Next.js framework.
 * Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them. 
 * Source code is MIT licensed.
 
-### Credits
+### Thanks
 
-Open source project  by Lucas Menezes. Special thanks to everyone who makes open Web. In memory of Aaron Swartz.
+Open source project by Lucas Menezes. Special thanks to everyone who makes open Web.

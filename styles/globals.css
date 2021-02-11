@@ -1,7 +1,5 @@
 :root {
   font-size: 16px;
-  --header-size: 64px;
-  --cor-preto: #111;
   --cor-cinza: #f1f1f1;
   --radius: 6px;
   --familia-fonte: 'IBM Plex Sans', monospace;
@@ -18,6 +16,7 @@
 .pink { background: #f357a8; }
 .orange { background: #ff7157; }
 .black { background: #656565; }
+.svg { fill: #000; }
 
 /* Scroll */
 html {
@@ -34,50 +33,49 @@ body {
   font-size: 0;
   background: #fff;
 }
+
 header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  padding: 0 1rem;
   background: transparent;
 }
-header .container {
-  padding: 0 2rem;
-  max-width: 100%;
-  background: transparent;
+header .button{
+  float: revert;
 }
 
 #logo {
   float: left;
   padding: 1.25rem;
-  width: 64px;
-  height: 64px;
-  font-size: 0;
   line-height: 0;
-  background: rgba(255, 255, 255, 0.1);
   z-index: 4;
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
 }
 #logo svg {
   fill: #fff;
 }
-#menu {
+#logo, #menu {
   position: relative;
+  width: 64px;
+  height: 64px;
+  font-size: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+#menu {
   float: right;
   z-index: 9;
-  padding-left: 1.25rem;
-  width: var(--header-size);
-  height: var(--header-size);
   outline: none;
-  font-size: 0;
-  background:  rgba(255, 255, 255, 0.15);
+  padding-left: 1.25rem;
 }
 .hamburger {
   position: relative;
   width: 24px;
   height: 3px;
   background: #fff;
-  transition: all .25s ease;
+  transition: all .25s;
+  border-radius: 1rem;
 }
 .hamburger:before, .hamburger:after {
   content: '';
@@ -88,7 +86,8 @@ header .container {
   height: 3px;
   background: #fff;
   z-index: 1;
-  transition: all .25s ease;
+  transition: all .25s;
+  border-radius: 1rem;
 }
 .hamburger:before {
   top: -7px;
@@ -104,32 +103,34 @@ header .container {
 }
 #menu.open .hamburger {
   transform: rotate(45deg);
+  background: #000;
 }
 #menu.open .hamburger:before,
 #menu.open .hamburger:after {
   top: 0;
   width: 24px;
   transform: rotate(90deg);
+  background: #000;
 }
+nav.open #logo svg {
+  fill: #000;
+}
+
 .layer {
   display: inline-block;
   background: transparent;
-  top: 2.5rem;
-  right: 3.15rem;
+  top: 1.95rem;
+  right: 3.85rem;
   width: 3px;
   height: 3px;
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0 0 0 0 var(--cor-cinza), 0 0 0 0 var(--cor-cinza);
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   transition: box-shadow .25s cubic-bezier(0.65, 0.05, 0.36, 1);
   z-index: 2;
  }
 .layer-active {
-  box-shadow: 0 0 0 100vw var(--cor-cinza), 0 0 0 100vh var(--cor-cinza);
-}
-
-.remove-scrollbar {
-  overflow: hidden;
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
 }
 
 nav {
@@ -142,8 +143,8 @@ nav {
   visibility: hidden;
   opacity: 0;
   z-index: 3;
-  background: var(--cor-cinza);
-  /* transition: visibility .35s ease, opacity .35s ease; */
+  background: #fff;
+  /* transition: visibility .25s, opacity .25s; */
 }
 nav.open {
   visibility: visible;
@@ -152,28 +153,28 @@ nav.open {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 10vw;
+  display: grid;
   height: 100vh;
-  width: 100%;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 nav li {
   text-align: center;
   padding: 0;
-  font-size: 0;
 }
 nav a {
   position: relative;
   display: inline-block;
-  margin: .5rem 0;
-  color: var(--cor-preto);
+  margin: 0;
+  padding: 2rem;
+  font-size: 3.5vw;
+  color: #aaa;
 }
 
 section {
   width: 100%;
-  padding: 4rem 1.75rem;
+  padding: 5rem 1rem;
 }
 .container {
   position: relative;
@@ -199,7 +200,7 @@ section {
 }
 
 a {
-  color: var(--cor-preto);
+  color: #000;
   font-weight: bold;
   text-decoration: none;
 }
@@ -216,7 +217,7 @@ a, button, .svg {
 }
 
 p, li, h1, h2, h3, h4, h5, h6 {
-  color:var(--cor-preto);
+  color: #000;
   padding-bottom: 2rem;
 }
 p, ul {
@@ -240,7 +241,7 @@ h1, h2, h3, h4, a, b, strong, .button, button, input, select {
 h1 {
   font-size: 2.5rem;
 }
-h2, article h1, nav a {
+h2, article h1 {
   font-size: 2rem;
 }
 h3, article h2 {
@@ -303,8 +304,8 @@ article blockquote {
   cursor: pointer;
 }
 .button:hover, .button:focus {
-  background: var(--cor-cinza);
-  color: var(--cor-preto);
+  background: #fff;
+  color: #000;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -383,10 +384,9 @@ select:hover, select:focus {
   opacity: 1;
 }
 
-/* Colors */
-.svg { fill: var(--cor-preto); }
-.gray { background: var(--cor-cinza); }
-
+form {
+  margin: .5rem 0 1rem;
+}
 /* Animations */
 section .container {
   -webkit-animation-name: up;
@@ -447,57 +447,25 @@ section .container {
   }
 }
 
+.feedSection {
+  position: relative;
+  display: inline-block;
+}
+.feedSection h2 {
+  position: absolute;
+  right: -1rem;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 5vw;
+  padding: 3rem 0;
+}
+
 /* large phones */
 @media only screen and (min-width: 520px) {
 
-  form {
-    padding: 0 1.5rem 1.5rem;
-  }
-  form input {
-    width: 47%;
-  }
-  form input:nth-child(2) {
-    margin-right: 6%;
-  }
 }
 
 /* tablets */
 @media only screen and (min-width: 800px) {
-
-  #menu, .layer {
-    display: none;
-  }
-  header .container {
-    float: left;
-    padding: 0 6rem;
-  }
-  header:hover nav a {
-    color: #fff;
-  }
-  nav {
-    position: relative;
-    float: left;
-    width: auto;
-    opacity: 1;
-    visibility: inherit;
-    background: transparent;
-  }
-  nav ul {
-    display: inline-block;
-    height: auto;
-  }
-  nav li {
-    display: inline-block;
-  }
-  nav a {
-    color: transparent;
-    margin: 0 0 0 3rem;
-    line-height: var(--header-size);
-  }
-
-  .home h2 {
-    font-size: 3rem;
-  }
 
   h1 {
     font-size: 3.5rem;
@@ -508,12 +476,14 @@ section .container {
   h3, h4 {
     font-size: 1.5rem;
   }
-  p, li, nav a, .button, input, textarea {
+  p, li, .button, input, textarea {
     font-size: 1rem;
   }
-
+  header {
+    padding: 0 2rem;
+  }
   section {
-    padding: 5rem 6rem;
+    padding: 5rem 8rem;
   }
   .col {
     display: flex;
@@ -530,7 +500,9 @@ section .container {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-
+  .feedSection h2 {
+    right: -2rem;
+  }
 }
 
 /* laptops & desktops */
@@ -539,17 +511,4 @@ section .container {
   body {
     background: #fff;
   }
-}
-
-.feedSection {
-  position: relative;
-  display: inline-block;
-}
-.feedSection h2 {
-  position: absolute;
-  right: -2rem;
-  color: rgba(255, 255, 255, 0.1);
-  font-size: 5vw;
-  padding: 3rem 0 3rem 3rem;
-  text-transform: uppercase;
 }

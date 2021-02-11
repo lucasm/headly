@@ -9,7 +9,7 @@ export default function VerticalNav(props) {
     <div>
         <div className={styles.verticalNav}>
           <ul>
-            <li><a href="#news" class="active"><span className={styles.label}>{props.news}</span></a></li>
+            <li><a href="#news"><span className={styles.label}>{props.news}</span></a></li>
             <li><a href="#check"><span className={styles.label}>{props.check}</span></a></li>
             <li><a href="#tech"><span className={styles.label}>{props.tech}</span></a></li>
             <li><a href="#biz"><span className={styles.label}>{props.biz}</span></a></li>

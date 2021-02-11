@@ -1,7 +1,7 @@
 {
     "news": [
-        {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "_BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
+        {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "El Pais", "feed": "https://feeds.elpais.com/mrss-s/pages/ep/site/brasil.elpais.com/portada"},
         {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "G1", "feed": "https://pox.globo.com/rss/g1/"},
@@ -57,8 +57,7 @@
     "sci": [
         {"name": "Revista Galileu", "feed": "http://revistagalileu.globo.com/rss/ultimas/feed.xml"},
         {"name": "Superinteressante", "feed": "https://super.abril.com.br/feed/"},
-        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"},
-        {"name": "Ciencia Hoje", "feed": "https://cienciahoje.org.br/feed/"}
+        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"}
     ],
     "dscvr": [
         {"name": "_reddit", "feed": "https://www.reddit.com/r/brasil/.rss"}

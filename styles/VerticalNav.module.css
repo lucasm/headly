@@ -101,9 +101,8 @@ Vertical navigation
   display: block;
   padding: 1rem 3rem;
   font-size: 4rem;
-  color: #aaa;
+  color: red;
   font-weight: bold;
-  text-transform: uppercase;
 /*  border-bottom: 1px solid rgba(58, 44, 65, 0.1);*/
 }
 .verticalNav a.active {
@@ -187,7 +186,7 @@ Vertical navigation
     height: auto;
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-bottom: none;
     color: transparent;
     background: transparent;

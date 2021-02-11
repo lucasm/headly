@@ -24,7 +24,16 @@ export default function Index() {
         feedback={t.feedback}
         edition={t.edition}
         contribute={t.contribute}
-        aboutHeader={t.aboutHeader}
+        about={t.about}
+        news={t.news}
+        check={t.check}
+        tech={t.tech}
+        biz={t.biz}
+        sport={t.sport}
+        cult={t.cult}
+        geek={t.geek}
+        sci={t.sci}
+        dscvr={t.dscvr}
     >
     
     <VerticalNav
