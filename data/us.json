@@ -74,8 +74,8 @@
         {"name": "LiveScience", "feed": "https://www.livescience.com/feeds/all"}
     ],
     "dscvr": [
-        {"name": "Medium", "feed": "https://medium.com/feed/tag/popular"},
         {"name": "reddit", "feed": "https://www.reddit.com/r/all/top/.rss"},
+        {"name": "Medium", "feed": "https://medium.com/feed/tag/popular"},
         {"name": "Longform", "feed": "https://longform.org/feed.rss"},
         {"name": "Digg", "feed": "http://digg.com/rss/index.xml"},
         {"name": "Upworthy", "feed": "https://www.upworthy.com/feeds/feed.rss"},
