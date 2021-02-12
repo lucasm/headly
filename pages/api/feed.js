@@ -41,7 +41,7 @@ const getFeedByCategory = async(callback) => {
 
 				filteredFeed[i].feedItems.push({
 					'title': theFeed[i].items[j].title,
-					'link': theFeed[i].items[j].link + "?ref=headlyne"
+					'link': theFeed[i].items[j].link + "?utm_source=headly_app"
 				})
 			}
 		}
@@ -84,7 +84,7 @@ const getFeedById = (callback) => {
 		for ( var i in feed.items.slice(0, 3) ) {
 			a.push({
 				"title": feed.items[i].title.replace(removes, ""),
-				"link": feed.items[i].link + "?ref=headly_app"
+				"link": feed.items[i].link + "?utm_source=headly_app"
 			});
 		}
 
