@@ -60,15 +60,6 @@ export default function Index() {
             </div>
         </section>
 
-        <section id="check" className="black">
-            <div className="feedSection">
-
-                <h2>{t.check}</h2>
-                <Card country={country} category="check"/>
-
-            </div>
-        </section>
-
         <section id="tech" className="blue">
             <div className="feedSection">
 
@@ -128,6 +119,15 @@ export default function Index() {
 
                 <h2>{t.dscvr}</h2>
                 <Card country={country} category="dscvr"/>
+
+            </div>
+        </section>
+
+        <section id="check" className="black">
+            <div className="feedSection">
+
+                <h2>{t.check}</h2>
+                <Card country={country} category="check"/>
 
             </div>
         </section>

@@ -15,7 +15,7 @@
 .aqua { background: #00b7ca; }
 .pink { background: #f357a8; }
 .orange { background: #ff7157; }
-.black { background: #656565; }
+.black { background: #34495e; }
 .svg { fill: #000; }
 
 /* Scroll */
@@ -117,13 +117,11 @@ nav.open #logo svg {
 }
 
 .layer {
-  display: inline-block;
-  background: transparent;
-  top: 1.95rem;
-  right: 3.85rem;
-  width: 3px;
-  height: 3px;
   position: absolute;
+  top: 2rem;
+  right: 4.1rem;
+  width: 1px;
+  height: 1px;
   border-radius: 50%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   transition: box-shadow .25s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -153,11 +151,11 @@ nav.open {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 10vw;
+  padding: 12vw;
   display: grid;
-  height: 100vh;
+  height: 80vh;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 nav li {
   text-align: center;
@@ -167,8 +165,8 @@ nav a {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 2rem;
-  font-size: 3.5vw;
+  padding: 0;
+  font-size: 1.5rem;
   color: #aaa;
 }
 
@@ -453,19 +451,24 @@ section .container {
 }
 .feedSection h2 {
   position: absolute;
-  right: -1rem;
+  right: 0;
+  left: 0;
+  top: -5rem;
   color: rgba(255, 255, 255, 0.1);
-  font-size: 5vw;
-  padding: 3rem 0;
+  font-size: 7vw;
+  padding: 1.5rem 0;
 }
 
-/* large phones */
-@media only screen and (min-width: 520px) {
-
-}
-
-/* tablets */
+/* tablet */
 @media only screen and (min-width: 800px) {
+
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  nav a {
+    padding: 2rem;
+    font-size: 3.5vw;
+  }
 
   h1 {
     font-size: 3.5rem;
@@ -480,7 +483,7 @@ section .container {
     font-size: 1rem;
   }
   header {
-    padding: 0 2rem;
+    padding: 0 2.25rem;
   }
   section {
     padding: 5rem 8rem;
@@ -502,10 +505,13 @@ section .container {
   }
   .feedSection h2 {
     right: -2rem;
+    top: unset;
+    left: unset;
+    font-size: 4.5vw;
+    padding: 2.5rem 0;
   }
 }
-
-/* laptops & desktops */
+/* desktop */
 @media only screen and (min-width: 1200px) {
 
   body {

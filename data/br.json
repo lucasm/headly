@@ -28,8 +28,7 @@
         {"name": "TecMundo", "feed": "http://www.baixaki.com.br/rss/tecnologia.xml"},
         {"name": "Olhar Digital", "feed": "https://olhardigital.com.br/rss"},
         {"name": "Computerworld", "feed": "https://computerworld.com.br/feed/"},
-        {"name": "The Hack", "feed": "https://thehack.com.br/rss/"},
-        {"name": "Oficina da Net", "feed": "https://www.oficinadanet.com.br/rss/geral"}
+        {"name": "The Hack", "feed": "https://thehack.com.br/rss/"}
     ],
     "biz": [
         {"name": "Exame", "feed": "https://exame.com/feed/"},

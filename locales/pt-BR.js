@@ -20,5 +20,5 @@ export default {
     sci: 'Ciência',
     dscvr: 'Descubra',
     search: 'Buscar',
-    filterRemoves : / - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete| - AdoroCinema/,
+    filterTitles: / - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete| - AdoroCinema/,
   };
