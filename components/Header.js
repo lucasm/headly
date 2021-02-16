@@ -37,7 +37,7 @@ return (
 				<li><a href="#dscvr" onClick={handleToggle}>{props.dscvr}</a></li>
 				<li><a href="#check" onClick={handleToggle}>{props.check}</a></li>
 			</ul>
-			<a href="https://github.com/lucasmezs/headly" target="_blank" className="button">{props.contribute}</a>
+			<a href="https://github.com/lucasm/headly" target="_blank" className="button">{props.contribute}</a>
 		</nav>
 
 		<div className={isActive ? "layer" : "layer layer-active"}></div>
