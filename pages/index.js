@@ -9,6 +9,8 @@ import pt_BR from '../locales/pt-BR';
 
 export default function Index() {
 
+    console.log('a');
+
     const router = useRouter();
     const { locale } = router;
     const t = locale === 'en' ? en : pt_BR;
