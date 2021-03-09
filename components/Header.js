@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from 'next/link'
 
 
-
 export default function Header(props) {
 
 	const [isActive, setActive] = useState("false");
@@ -28,14 +27,14 @@ return (
 		<nav className={isActive ? null : "open"}>
 			<ul>
 				<li><a href="#news" onClick={handleToggle}>{props.news}</a></li>
-				<li><a href="#tech" onClick={handleToggle}>{props.tech}</a></li>
+				<li><a href="#check" onClick={handleToggle}>{props.check}</a></li>
 				<li><a href="#biz" onClick={handleToggle}>{props.biz}</a></li>
+				<li><a href="#tech" onClick={handleToggle}>{props.tech}</a></li>
 				<li><a href="#sport" onClick={handleToggle}>{props.sport}</a></li>
 				<li><a href="#cult" onClick={handleToggle}>{props.cult}</a></li>
 				<li><a href="#geek" onClick={handleToggle}>{props.geek}</a></li>
 				<li><a href="#sci" onClick={handleToggle}>{props.sci}</a></li>
 				<li><a href="#dscvr" onClick={handleToggle}>{props.dscvr}</a></li>
-				<li><a href="#check" onClick={handleToggle}>{props.check}</a></li>
 			</ul>
 			<a href="https://github.com/lucasm/headly" target="_blank" className="button">{props.contribute}</a>
 		</nav>

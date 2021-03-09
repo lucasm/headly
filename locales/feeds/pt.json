@@ -1,0 +1,45 @@
+{
+    "news": [
+        {"name": "Público", "feed": "http://feeds.feedburner.com/PublicoRSS"},
+        {"name": "Observador", "feed": "https://feeds.feedburner.com/obs-ultimas"},
+        {"name": "Diário de Notícias", "feed": "http://feeds.dn.pt/DN-Ultimas"},
+        {"name": "Jornal de Notícias", "feed": "http://feeds.jn.pt/JN-ULTIMAS"},
+        {"name": "RTP", "feed": "https://www.rtp.pt/noticias/rss"}
+    ],
+    "check": [
+        {"name": "Poligrafo", "feed": "https://poligrafo.sapo.pt/feed"}
+    ],
+    "tech": [
+        {"name": "Pplware", "feed": "https://pplware.sapo.pt/feed/"},
+        {"name": "Exame Informatica", "feed": "https://visao.sapo.pt/exameinformatica/feed/"},
+        {"name": "PC Guia", "feed": "https://www.pcguia.pt/feed/"},
+        {"name": "Bit Magazine", "feed": "https://www.bit.pt/feed"}
+    ],
+    "biz": [
+        {"name": "Exame", "feed": "https://exame.com/feed/"},
+        {"name": "Valor", "feed": "http://www.valor.com.br/rss"},
+        {"name": "Valort", "feed": "http://www.valor.com.br/rss"}
+    ],
+    "sport": [
+        {"name": "ge", "feed": "http://pox.globo.com/rss/ge/"},
+        {"name": "Lance", "feed": "https://www.lance.com.br/rss/"},
+        {"name": "Vatlor", "feed": "http://www.valor.com.br/rss"}
+    ],
+    "cult": [
+        {"name": "Omelete", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:omelete.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "AdoroCinema", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:adorocinema.com&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "TMDQA", "feed": "https://www.tenhomaisdiscosqueamigos.com/feed/"}
+    ],
+    "geek": [
+        {"name": "IGN", "feed": "https://pt.ign.com/feed.xml"}
+    ],
+    "sci": [
+        {"name": "Revista Galileu", "feed": "http://revistagalileu.globo.com/rss/ultimas/feed.xml"},
+        {"name": "Superinteressante", "feed": "https://super.abril.com.br/feed/"},
+        {"name": "HypeScience", "feed": "https://hypescience.com/feed/"}
+    ],
+    "dscvr": [
+        {"name": "Reddit", "feed": "https://www.reddit.com/r/portugal/.rss"}
+    ],
+    "filter": {"keywords": ""}
+}

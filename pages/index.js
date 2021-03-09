@@ -1,20 +1,27 @@
 import { useRouter } from 'next/router';
 import PageLayout from '../components/PageLayout';
 import VerticalNav from '../components/VerticalNav';
-import Card from '../components/Card';
+import CardFeed from '../components/CardFeed';
 
 // locales
 import en from '../locales/en';
 import pt_BR from '../locales/pt-BR';
+import pt_PT from '../locales/pt-PT';
 
 export default function Index() {
 
-    console.log('a');
-
     const router = useRouter();
     const { locale } = router;
-    const t = locale === 'en' ? en : pt_BR;
-    const country = t.country;
+    var t;
+
+    if (locale === 'pt-BR') {
+        t = pt_BR;
+    } else if (locale === 'pt-PT') {
+        t = pt_PT;
+    } else {
+        t = en;
+    }
+    console.log(locale);
 
   return (
     <PageLayout
@@ -52,30 +59,39 @@ export default function Index() {
 
     <main>
 
-        <section id="news" className="red">
+        <section id="news">
             <div className="feedSection">
 
                 <h2>{t.news}</h2>
                 {/* <FetchFeeds country="us" category="news"/> */}
-                <Card country={country} category="news"/>
+                <CardFeed country={t.country} category="news"/>
 
             </div>
         </section>
 
-        <section id="tech" className="blue">
+        <section id="check">
             <div className="feedSection">
 
-                <h2>{t.tech}</h2>
-                <Card country={country} category="tech"/>
+                <h2>{t.check}</h2>
+                <CardFeed country={t.country} category="check"/>
 
             </div>
         </section>
 
-        <section id="biz" className="green">
+        <section id="biz">
             <div className="feedSection">
 
                 <h2>{t.biz}</h2>
-                <Card country={country} category="biz"/>
+                <CardFeed country={t.country} category="biz"/>
+
+            </div>
+        </section>
+
+        <section id="tech">
+            <div className="feedSection">
+
+                <h2>{t.tech}</h2>
+                <CardFeed country={t.country} category="tech"/>
 
             </div>
         </section>
@@ -84,7 +100,7 @@ export default function Index() {
             <div className="feedSection">
 
                 <h2>{t.sport}</h2>
-                <Card country={country} category="sport"/>
+                <CardFeed country={t.country} category="sport"/>
 
             </div>
         </section>
@@ -93,7 +109,7 @@ export default function Index() {
             <div className="feedSection">
 
                 <h2>{t.cult}</h2>
-                <Card country={country} category="cult"/>
+                <CardFeed country={t.country} category="cult"/>
  
             </div>
         </section>
@@ -102,7 +118,7 @@ export default function Index() {
             <div className="feedSection">
 
                 <h2>{t.geek}</h2> 
-                <Card country={country} category="geek"/>
+                <CardFeed country={t.country} category="geek"/>
 
             </div>
         </section>
@@ -111,7 +127,7 @@ export default function Index() {
             <div className="feedSection">
 
                 <h2>{t.sci}</h2>
-                <Card country={country} category="sci"/>
+                <CardFeed country={t.country} category="sci"/>
 
             </div>
         </section>
@@ -120,16 +136,7 @@ export default function Index() {
             <div className="feedSection">
 
                 <h2>{t.dscvr}</h2>
-                <Card country={country} category="dscvr"/>
-
-            </div>
-        </section>
-
-        <section id="check" className="black">
-            <div className="feedSection">
-
-                <h2>{t.check}</h2>
-                <Card country={country} category="check"/>
+                <CardFeed country={t.country} category="dscvr"/>
 
             </div>
         </section>

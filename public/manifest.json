@@ -1,7 +1,7 @@
 {
   "name": "Headly",
   "short_name": "Headly",
-  "description": "News for the critical sense",
+  "description": "News reader for the critical sense",
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",

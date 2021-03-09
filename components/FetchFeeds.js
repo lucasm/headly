@@ -3,6 +3,36 @@
 import React from "react";
 import styles from '../styles/CardFeed.module.css';
 
+// fetch
+var requested = 'no';
+var dataFeed = [];
+var apiData = [];
+
+async function fetchFeeds(category) {
+
+    // if don't stored yet, call fetch
+    if ( requested != category ) {
+
+        console.log('*** CALLING API ***', category);
+        requested = category;
+
+        fetch("/api/us?category=" + category).then(function(response) {
+            response.json().then(function(data){
+
+                // store feed data in array by category
+                dataFeed.push({
+                    "category": category,
+                    "data": data
+                });
+                console.log(category, 'feeds:', data);
+            });
+        });
+    } else {
+      console.log('SKIPPED');
+    }
+
+}
+
 // generate ID 
 function generateId(string) {
   let lovercased = string.toLowerCase();

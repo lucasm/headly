@@ -7,18 +7,19 @@
 
 *, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
 
-.red { background: #ff455f; }
-.blue { background: #5475ff; }
-.green { background: #00bd77; }
-.yellow { background: #fbb22c; }
+#news { background: #ff455f; }
+#check { background: #606f7b; }
+#tech { background: #5475ff; }
+#biz { background: #00bd77; }
+.yellow { background: #ffa04f; }
 .purple { background: #9f5bf6; }
 .aqua { background: #00b7ca; }
 .pink { background: #f357a8; }
 .orange { background: #ff7157; }
 .black { background: #34495e; }
+
 .svg { fill: #000; }
 
-/* Scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -37,9 +38,9 @@ body {
 header {
   position: fixed;
   width: 100%;
-  z-index: 999;
   padding: 0 1rem;
   background: transparent;
+  z-index: 999;
 }
 header .button{
   float: revert;
@@ -47,7 +48,7 @@ header .button{
 
 #logo {
   float: left;
-  padding: 1.25rem;
+  padding: .75rem;
   line-height: 0;
   z-index: 4;
 }
@@ -56,18 +57,18 @@ header .button{
 }
 #logo, #menu {
   position: relative;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   font-size: 0;
   background: rgba(255, 255, 255, 0.1);
-  border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
 }
 #menu {
   float: right;
   z-index: 9;
   outline: none;
-  padding-left: 1.25rem;
+  padding-left: .75rem;
 }
 .hamburger {
   position: relative;
@@ -118,8 +119,8 @@ nav.open #logo svg {
 
 .layer {
   position: absolute;
-  top: 2rem;
-  right: 4.1rem;
+  top: 1.5rem;
+  right: 2.5rem;
   width: 1px;
   height: 1px;
   border-radius: 50%;
@@ -150,10 +151,10 @@ nav.open {
 }
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 12vw;
+  margin: 10vh;
+  padding: 0;
   display: grid;
-  height: 80vh;
+  height: 60vh;
   align-items: center;
   grid-template-columns: 1fr;
 }
@@ -338,10 +339,11 @@ article blockquote {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 1.5rem .5rem;
+  padding: 4rem 1.5rem 2rem;
 }
 footer ul {
   list-style-type: none;
+  padding: 0;
 }
 footer li, footer p, footer label {
   font-size: 1rem;
@@ -353,10 +355,10 @@ footer a, footer p, footer label {
   color: #aaa;
 }
 footer li {
-  padding: 0 1rem 1rem;
+  padding: .75rem;
 }
 footer svg {
-  width: 38px;
+  width: 34px;
   fill: #aaa;
   margin: 0 0 1rem;
 }
@@ -454,13 +456,18 @@ section .container {
   right: 0;
   left: 0;
   top: -5rem;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, .1);
   font-size: 7vw;
   padding: 1.5rem 0;
 }
 
 /* tablet */
 @media only screen and (min-width: 800px) {
+
+  .layer {
+    top: 2rem;
+    right: 4.25rem;
+  }
 
   nav ul {
     grid-template-columns: 1fr 1fr 1fr;
@@ -485,8 +492,13 @@ section .container {
   header {
     padding: 0 2.25rem;
   }
+  #logo, #menu {
+    width: 64px;
+    height: 64px;
+    padding: 1.25rem;
+  }
   section {
-    padding: 5rem 8rem;
+    padding: 5rem 7.75rem;
   }
   .col {
     display: flex;
@@ -504,11 +516,11 @@ section .container {
     padding-right: 3rem;
   }
   .feedSection h2 {
-    right: -2rem;
+    right: -1rem;
     top: unset;
     left: unset;
-    font-size: 4.5vw;
-    padding: 2.5rem 0;
+    font-size: 4vw;
+    padding: 3rem 0 0;
   }
 }
 /* desktop */

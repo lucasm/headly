@@ -3,10 +3,17 @@
 import Parser from 'rss-parser';
 let parser = new Parser();
 
-// parameters
-var feedCountry, feedCategory, feedId;
+var feedCountry, feedCategory, feedName = '';
+var feedFilter = {};
 
-// fetching feeds
+function setValues(country, category) {
+
+	feedCountry = require('../../locales/feeds/'+country+'.json');
+	feedFilter = eval(feedCountry.filter["keywords"]);
+	feedCategory = category;
+}
+
+// fetch feeds
 const getFeedByCategory = async(callback) => {
 
 	var ids = [];
@@ -54,13 +61,13 @@ const getFeedByCategory = async(callback) => {
 		return callback(err);
 	}
 }
-const getFeedById = (callback) => {
+const getFeedByName = (callback) => {
 
 	var feedUrl = '';
 
-	// loop to find ID
+	// iterate to find feed
 	for ( var i in feedCountry[feedCategory] ) {
-		if (feedId == feedCountry[feedCategory][i].name) {
+		if (feedName == feedCountry[feedCategory][i].name) {
 			// store feed URL
 			feedUrl = feedCountry[feedCategory][i].feed;
 		}
@@ -77,13 +84,11 @@ const getFeedById = (callback) => {
 			  }]);
 		}
 
-		var a=[];
-
-		const removes=/ - Reuters| - Bloomberg| - CNET| - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Omelete| - AdoroCinema/;
+		var a = [];
 
 		for ( var i in feed.items.slice(0, 3) ) {
 			a.push({
-				"title": feed.items[i].title.replace(removes, ""),
+				"title": feed.items[i].title.replace(feedFilter, ""),
 				"link": feed.items[i].link + "?utm_source=headly_app"
 			});
 		}
@@ -92,33 +97,29 @@ const getFeedById = (callback) => {
 		return callback(a);
 	});
 }
-    
+
 export default function handler(req, res) {
 
     // parameters
     const {
 		query: {country},
 		query: {category},
-		query: {id}
+		query: {name}
 	  } = req
-	  
-	//
-	if ( country && category && id ) {
 
-		// get one feed by ID
-		feedCountry = require('../../data/'+country+'.json');
-		feedCategory = category;
-		feedId = id;
+	// endpoints
+	if ( country && category && name ) { // single feed by Name
 
-		getFeedById(function(data) {
-			res.send(data);
+		setValues(country, category);
+		feedName = name;
+
+		getFeedByName(function(data) {
+			res.status(200).send(data);
 		});
 
-	} else if ( country && category ) {
+	} else if ( country && category ) { // all feeds by Category
 
-		// get all feeds by Category
-		feedCountry = require('../../data/'+country+'.json');
-		feedCategory = category;
+		setValues(country, category);
 
 		getFeedByCategory(function(data) {
 			res.status(200).send(data);
@@ -126,7 +127,7 @@ export default function handler(req, res) {
 
 	} else {
 		// error
-		res.status(405).end(`Error: missing or not allowed parameters 1 '${country}' 2 '${category}' 3 '${id}'`);
+		res.status(405).end(`Error: missing or not allowed parameters | country: '${country}' | category: '${category}' | name: '${name}'`);
 	}
 
 }

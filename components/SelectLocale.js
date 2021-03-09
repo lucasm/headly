@@ -13,9 +13,10 @@ export default function SelectLocale(props) {
     return (
         <form>
             <label>{props.edition}</label>
-            <select onChange={changeLanguage} defaultValue={locale} id="country">
+            <select onChange={changeLanguage} defaultValue={locale}>
                 <option value="en">International</option>
                 <option value="pt-BR">Brasil</option>
+                <option value="pt-PT">Portugal</option>
             </select>
         </form>
     )
