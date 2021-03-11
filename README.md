@@ -16,7 +16,7 @@ News reader for the critical sense.<br>
 </p>
 
 
-## The news app
+## A news app
 
 Headly encourages peoples critical sense with latest headlines from trusted and diverse news sources. Headly helps you stay updated at glance, support the good journalism and fight against misinformation.
 
@@ -32,27 +32,27 @@ Thanks for considering contribute with Headly!
 
 ### Discussions
 
-Do you want to suggest a news source, have a feedback, idea or any other topic? Visit [discussions](https://github.com/lucasm/headly/discussions).
+Visit [discussions](https://github.com/lucasm/headly/discussions) to suggest a news source, send a feedback, idea or any other topic.
 
 ### Donations
 
-You can [buy me a coffee](https://www.buymeacoffee.com/lucasm) to help maintain active development and pay app costs like APIs calls, domain and hosting.
+To help maintain active development and pay app costs, like domain and hosting, you can [buy me a coffee](https://www.buymeacoffee.com/lucasm).
 
 ### Development
 
-Please, visit [projects](https://github.com/lucasm/headly/projects) to see current development board. For bugs or features, open a new issue before send pull requests.
+View [projects](https://github.com/lucasm/headly/projects/1) to see development board. For bugs or features, please, open a new issue before send pull requests.
 
-Headly app is built with Next.js framework.
+Headly app is built with Next.js framework, where:
 
-- **Frontend**: React SPA `/pages/index.js` with `/components`
+- **Frontend** is a React SPA `/pages/index.js` with `/components`.
 
-- **Backend**: Express API `/pages/api/feed.js` to pre-process RSS/XML feeds running on `/api/feed` with endpoints: 1) All feeds by category: `/api/feed?country=us&category=news`; 2) Single feed by name: `/api/feed?country=us&category=news&name=bbc`
+- **Backend** is an Express API `/pages/api/feed.js` to pre-process RSS/XML feeds running on `/api/feed` with endpoints: 1) All feeds by category: `/api/feed?country=us&category=news`; 2) Single feed by name: `/api/feed?country=us&category=news&name=BBC`.
 
-- **Locales files**: `/locales/cc-CC.js` with language translations and `/locales/feeds/cc.json` with feeds parameters by country.
+- **Locales files** on `/locales/cc-CC.js` with language translations and `/locales/feeds/cc.json` with feeds parameters.
 
 ### Translations
 
-To add a new local edition of Headly: 1) Create a `/locales/` JS file named as standard language codes (en, pt-BR, etc.) and put text translations. 2) Create a `/locales/feeds/` JSON file named as standard country codes (us, br, etc.) and put feeds parameters; 3) Add new locale in `/next.config.js` and call them in `/pages/index.js`.
+To add a new local edition: 1) Create a `/locales/` JS file named as standard language codes (en, pt-BR, etc.) and put text translations. 2) Create a `/locales/feeds/` JSON file named as standard country codes (us, br, etc.) and put feeds parameters; 3) Add new locale in `/next.config.js` and call them in `/pages/index.js`.
 
 ## Legal
 

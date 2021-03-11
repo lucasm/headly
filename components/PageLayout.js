@@ -99,10 +99,11 @@ export default function PageLayout(props) {
     <Footer
 		title={props.title}
 		legal={props.legal}
+		edition={props.edition}
+		credits={props.credits}
 		about={props.about}
 		privacy={props.privacy}
         feedback={props.feedback}
-		edition={props.edition}
 	/>
   </div>
 )}

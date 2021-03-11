@@ -32,6 +32,7 @@ export default function Index() {
         privacy={t.privacy}
         feedback={t.feedback}
         edition={t.edition}
+        credits={t.credits}
         contribute={t.contribute}
         about={t.about}
         news={t.news}

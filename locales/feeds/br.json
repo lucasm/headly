@@ -1,7 +1,7 @@
 {
     "news": [
-        {"name": "BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
         {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
+        {"name": "BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
         {"name": "El País", "feed": "https://feeds.elpais.com/mrss-s/pages/ep/site/brasil.elpais.com/portada"},
         {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "O Globo", "feed": "https://oglobo.globo.com/rss.xml?secao=pais"},
