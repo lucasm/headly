@@ -462,7 +462,7 @@ section .container {
 }
 
 /* tablet */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 812px) {
 
   .layer {
     top: 2rem;

@@ -56,8 +56,8 @@ To add a new local edition: 1) Create a `/locales/` JS file named as standard la
 
 ## Legal
 
-Headly is an open source project by [Lucas Menezes](https://lucasm.dev/?utm_source=headly).
+Open source project by [Lucas Menezes](https://lucasm.dev/?utm_source=headly).
 
-* Source code is under MIT license.
+* Source code is MIT licensed.
 * Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them.
-* Read the [privacy policy](https://lucasm.dev/privacy).
+* [Privacy policy](https://lucasm.dev/privacy).

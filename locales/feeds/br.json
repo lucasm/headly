@@ -1,7 +1,7 @@
 {
     "news": [
-        {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "BBC", "feed": "http://feeds.bbci.co.uk/portuguese/rss.xml"},
+        {"name": "UOL", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "El País", "feed": "https://feeds.elpais.com/mrss-s/pages/ep/site/brasil.elpais.com/portada"},
         {"name": "Folha", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:folha.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
         {"name": "O Globo", "feed": "https://oglobo.globo.com/rss.xml?secao=pais"},
@@ -11,8 +11,8 @@
         {"name": "G1", "feed": "https://pox.globo.com/rss/g1/politica/"},
         {"name": "The Intercept", "feed": "https://theintercept.com/feed/?lang=pt"},
         {"name": "Revista Fórum", "feed": "https://revistaforum.com.br/feed/"},
-        {"name": "Nexo Jornal", "feed": "https://www.nexojornal.com.br/rss.xml"},
         {"name": "Poder360", "feed": "https://www.poder360.com.br/feed/"},
+        {"name": "Nexo Jornal", "feed": "https://www.nexojornal.com.br/rss.xml"},
         {"name": "Agência Pública", "feed": "https://apublica.org/category/portugues/feed/"},
         {"name": "Jacobin", "feed": "https://jacobin.com.br/feed/"},
         {"name": "Le Monde Diplomatique", "feed": "https://diplomatique.org.br/feed/"}
@@ -30,7 +30,10 @@
         {"name": "Olhar Digital", "feed": "https://olhardigital.com.br/rss"},
         {"name": "TechTudo", "feed": "https://pox.globo.com/rss/techtudo"},
         {"name": "Computerworld", "feed": "https://computerworld.com.br/feed/"},
-        {"name": "The Hack", "feed": "https://thehack.com.br/rss/"}
+        {"name": "The Hack", "feed": "https://thehack.com.br/rss/"},
+        {"name": "Manual do Usuario", "feed": "https://manualdousuario.net/feed/"},
+        {"name": "Diolinux", "feed": "https://feeds.feedburner.com/Diolinux"},
+        {"name": "SempreUpdate", "feed": "https://sempreupdate.com.br/feed/"}
     ],
     "biz": [
         {"name": "Exame", "feed": "https://exame.com/feed/"},
@@ -38,8 +41,10 @@
         {"name": "InfoMoney", "feed": "https://www.infomoney.com.br/feed/"},
         {"name": "Investing", "feed": "https://br.investing.com/rss/news.rss"},
         {"name": "Money Times", "feed": "https://www.moneytimes.com.br/feed/"},
-        {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
+        {"name": "Seu Dinheiro", "feed": "https://www.seudinheiro.com/feed/"},
         {"name": "Forbes", "feed": "https://www.forbes.com.br/feed/"},
+        {"name": "NeoFeed", "feed": "https://neofeed.com.br/feed/"},
+        {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
         {"name": "Startupi", "feed": "https://startupi.com.br/feed/"}
     ],
     "sport": [
