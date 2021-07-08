@@ -34,6 +34,7 @@ export default function Index() {
         edition={t.edition}
         credits={t.credits}
         contribute={t.contribute}
+        donate={t.donate}
         about={t.about}
         news={t.news}
         check={t.check}
@@ -66,15 +67,6 @@ export default function Index() {
                 <h2>{t.news}</h2>
                 {/* <FetchFeeds country="us" category="news"/> */}
                 <CardFeed country={t.country} category="news"/>
-
-            </div>
-        </section>
-
-        <section id="check">
-            <div className="feedSection">
-
-                <h2>{t.check}</h2>
-                <CardFeed country={t.country} category="check"/>
 
             </div>
         </section>
@@ -129,6 +121,15 @@ export default function Index() {
 
                 <h2>{t.sci}</h2>
                 <CardFeed country={t.country} category="sci"/>
+
+            </div>
+        </section>
+
+        <section id="check">
+            <div className="feedSection">
+
+                <h2>{t.check}</h2>
+                <CardFeed country={t.country} category="check"/>
 
             </div>
         </section>

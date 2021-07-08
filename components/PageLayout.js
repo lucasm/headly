@@ -82,7 +82,7 @@ export default function PageLayout(props) {
 
     <Header
 		about={props.about}
-		contribute={props.contribute}
+		donate={props.donate}
 		news={props.news}
         check={props.check}
         tech={props.tech}
@@ -102,6 +102,7 @@ export default function PageLayout(props) {
 		edition={props.edition}
 		credits={props.credits}
 		about={props.about}
+		contribute={props.contribute}
 		privacy={props.privacy}
         feedback={props.feedback}
 	/>

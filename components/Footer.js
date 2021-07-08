@@ -21,9 +21,7 @@ import SelectLocale from './SelectLocale'
 
         <SelectLocale edition={props.edition}/>
 
-        <p>{props.legal}</p>
-        <br/>
-        <p>{props.credits} <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="noopener">Lucas Menezes</a>.</p>
+        <p>{props.legal} {props.credits} <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="noopener">Lucas Menezes</a>.</p>
         <br/>
 
         <ul>
