@@ -1,11 +1,10 @@
-
 <div align="center">
   <a href="https://headly.app/">
-    <img height="64" src="https://headly.app/images/headly-logo-color.svg">
+    <img height="128" src="https://headly.app/images/headly-logo-color.svg">
   </a>
 </div>
 <h1 align="center">
-Headly
+<a href="https://headly.app/">Headly</a>
 </h1>
 <p align="center">
 <img alt="Languages" src="https://img.shields.io/badge/languages available -3-4dc71f">
@@ -13,46 +12,40 @@ Headly
 <img alt="License" src="https://img.shields.io/github/license/lucasm/headly?color=4dc71f">
 </p>
 <p align="center">
-News for the critical sense.<br>
+News for critical people.<br>
 </p>
 
 
-## The news headlines app
+## News headlines app
 
 Headly show the latest headlines from trusted news sources. Headly encourages critical sense and helps you stay updated at glance, support the good journalism and fight against misinformation.
 
-**Newest** — News headlines, fact-checking and opinions.
+**Newest** — Breaking news headlines.
 
-**Trusted** —  Journalism sources selected by the community with strong focus on critical sense, democracy, human rights and liberty of expression.
+**Trusted sources** —  Journalism sources selected by the community with strong focus on liberty of expression, critical sense, democracy and human rights.
 
-**International** — Editions available by country.
+**Internationalized** — Editions available by country.
 
-**Accessible** — Easy to navigate, fast on slow internet connections and featuring free access journalism above paywall's.
+**Accessibility** — Easy to navigate and read, fast on slow internet connections and showing free access journalism above paywall.
+
+**Real time fact-checker** — SOON.
 
 
 ## Contributing
 
+Visit the [Discussions](https://github.com/lucasm/headly/discussions) public forum.
 
-Visit the [discussions forum](https://github.com/lucasm/headly/discussions).
+You can [Buy Me a Coffee](https://www.buymeacoffee.com/lucasm) to help maintain active development (pay app costs, like domain and hosting).
 
-You can [buy me a coffee](https://www.buymeacoffee.com/lucasm) to maintain active development (helping pay app costs like domain and hosting).
+See the [Project](https://github.com/lucasm/headly/projects/1?fullscreen=true) development board.
 
-For bugs or features, please, open a new issue before send pull requests. See also the [project development board](https://github.com/lucasm/headly/projects). 
+For bugs or features, please, open a new issue before send pull requests. 
 
-Headly app is built with Next.js framework.
-
-- **Frontend** is a React SPA `/pages/index.js` with `/components`.
-
-- **Backend** is an Express API `/pages/api/feed.js` to pre-process RSS/XML feeds running on `/api/feed` with endpoints: All feeds by category on  `/api/feed?country=us&category=news`; Single feed by name on `/api/feed?country=us&category=news&name=BBC`.
-
-- **Locales files** on `/locales/cc-CC.js` with language translations and `/locales/feeds/cc.json` with feeds parameters.
-
-- **How add a new local edition?** 1) Create a `/locales/` JS file named as standard language codes (en, pt-BR, etc.) and put text translations. 2) Create a `/locales/feeds/` JSON file named as standard country codes (us, br, etc.) and put feeds parameters; 3) Add new locale in `/next.config.js` and call them in `/pages/index.js`.
 
 ## Legal
 
-Open source project by [Lucas Menezes](https://lucasm.dev/?utm_source=headly).
+Source code is MIT licensed.
 
-* Source code is MIT licensed.
-* Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them.
-* [Privacy](https://lucasm.dev/privacy).
+Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them.
+
+Open source project by [Lucas Menezes](https://lucasm.dev/?utm_source=headly).
