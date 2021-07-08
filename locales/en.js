@@ -8,7 +8,7 @@ export default {
     edition: 'Edition',
     country: 'us',
     contribute: 'Contribute',
-    donate: 'Donate',
+    donate: 'Make a donation',
     credits: 'Open source project created by',
     cookies: `Headly uses cookies to ensure you get the best experience`,
     button: `Got it!`,

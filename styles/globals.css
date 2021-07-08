@@ -299,8 +299,8 @@ article blockquote {
   position: relative;
   float: left;
   margin: 1rem 0 0;
-  padding: 0 1.5rem;
-  line-height: 44px;
+  padding: 0 1.25rem;
+  line-height: 40px;
   color: #fff;
   background: #000;
   border: none;
