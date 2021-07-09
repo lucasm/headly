@@ -18,13 +18,13 @@ News for critical people.<br>
 
 ## News headlines app
 
-Headly is an app thats show breaking news headlines with an real time fact-checking, encouraging trusted journalism and critical sense.
+Headly app show breaking news headlines and fact-checking powered by trusted and diverse journalism sources, encouraging peoples critical sense and fight against misinformation.
 
 -  **Newest** — Breaking news headlines.
 
--  **Trusted sources** — Journalism sources approved by community, with focus on liberty of expression, critical sense, democracy and human rights.
+-  **Trusted journalism** — Sources approved by community, with focus on liberty of expression, critical sense, democracy and human rights.
 
--  **Internationalized** — Editions available by country.
+-  **International** — Editions available by country.
 
 -  **Accessibility** — Easy to read and navigate, fast on slow internet connections and featuring free access journalism above paywall.
 
@@ -33,18 +33,18 @@ Headly is an app thats show breaking news headlines with an real time fact-check
 
 ## Contributing
 
-Visit the [Discussions](https://github.com/lucasm/headly/discussions) public forum.
+Visit the [Discussions forum](https://github.com/lucasm/headly/discussions).
 
-You can become a [Patreon](https://patreon.com/lucasmezs) to support active development, help pay app costs and get benefits as early access.
+You can [become a Patreon](https://patreon.com/lucasmezs) to support active development, help pay app costs and get benefits as early access.
 
-See the [Project](https://github.com/lucasm/headly/projects/1?fullscreen=true) development board.
+See the [Project development board](https://github.com/lucasm/headly/projects/1?fullscreen=true).
 
 For bugs or features, please, open a new issue before send pull requests.
 
 
 ## Legal
 
-Source code is MIT licensed.
+Code is MIT licensed.
 
 Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them.
 
