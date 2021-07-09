@@ -104,6 +104,7 @@ export default function PageLayout(props) {
 		about={props.about}
 		contribute={props.contribute}
 		privacy={props.privacy}
+		donate={props.donate}
         feedback={props.feedback}
 	/>
   </div>

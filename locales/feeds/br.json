@@ -45,7 +45,8 @@
         {"name": "Forbes", "feed": "https://www.forbes.com.br/feed/"},
         {"name": "NeoFeed", "feed": "https://neofeed.com.br/feed/"},
         {"name": "InvestNews", "feed": "https://investnews.com.br/feed/"},
-        {"name": "Startupi", "feed": "https://startupi.com.br/feed/"}
+        {"name": "Startupi", "feed": "https://startupi.com.br/feed/"},
+        {"name": "EInvestidor", "feed": "https://einvestidor.estadao.com.br/feed/"}
     ],
     "sport": [
         {"name": "globoesporte", "feed": "http://pox.globo.com/rss/ge/"},
@@ -78,5 +79,5 @@
     "dscvr": [
         {"name": "Reddit", "feed": "https://www.reddit.com/r/brasil/.rss"}
     ],
-    "filter": {"keywords": "/ - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Opinião Estadão| - Saúde Estadão| - Economia & Negócios Estadão| - globoesporte.com| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem/"}
+    "filter": {"keywords": "/ - Folha de S.Paulo| - UOL Notícias| - Política Estadão| - Opinião Estadão| - Saúde Estadão| - Economia & Negócios Estadão| – Mercado – E-Investidor - E-Investidor| - globoesporte.com| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem/"}
 }

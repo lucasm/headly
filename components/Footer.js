@@ -22,11 +22,11 @@ import SelectLocale from './SelectLocale'
         <SelectLocale edition={props.edition}/>
 
         <p>{props.legal} {props.credits} <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="noopener">Lucas Menezes</a>.</p>
-        <br/>
 
         <ul>
           <li><a href="https://github.com/lucasm/headly" target="_blank" rel="noopener">{props.about}</a></li>
           <li><a href="https://lucasm.dev/privacy" target="_blank" rel="noopener">{props.privacy}</a></li>
+          <li><a href="https://patreon.com/lucasmezs" target="_blank" rel="noopener">{props.donate}</a></li>
           <li><a href="mailto:feedback@headly.app">{props.feedback}</a></li>
         </ul>
 

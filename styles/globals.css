@@ -118,8 +118,14 @@ nav.open #logo svg {
   fill: #000;
 }
 
-#menu:hover, #logo:hover {
+#menu, #logo {
   box-shadow: var(--shadow);
+}
+#menu.open, #logo.open {
+  box-shadow: none;
+}
+#menu:hover, #logo:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .layer {
@@ -363,7 +369,7 @@ footer li {
   padding: .75rem;
 }
 footer svg {
-  width: 34px;
+  width: 40px;
   fill: #aaa;
   margin: 0 0 1rem;
 }
