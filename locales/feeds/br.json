@@ -63,10 +63,13 @@
         {"name": "Jovem Nerd", "feed": "https://jovemnerd.com.br/feed/"},
         {"name": "IGN", "feed": "https://br.ign.com/feed.xml"},
         {"name": "Rolling Stone", "feed": "https://news.google.com/rss/search?q=when:24h+allinurl:rollingstone.uol.com.br&ceid=BR:pt-419&hl=pt-BR&gl=BR"},
-        {"name": "B9", "feed": "https://www.b9.com.br/feed"}
+        {"name": "B9", "feed": "https://www.b9.com.br/feed"},
+        {"name": "Tracklist", "feed": "https://tracklist.com.br/feed"}
     ],
     "geek": [
-        {"name": "gshow", "feed": "https://pox.globo.com/rss/gshow/"}
+        {"name": "gshow", "feed": "https://pox.globo.com/rss/gshow/"},
+        {"name": "PurePeople", "feed": "https://www.purepeople.com.br/rss/news_t0.xml"},
+        {"name": "O Fuxico", "feed": "https://www.ofuxico.com.br/feed/"}
     ],
     "sci": [
         {"name": "Revista Galileu", "feed": "http://revistagalileu.globo.com/rss/ultimas/feed.xml"},

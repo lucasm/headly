@@ -35,7 +35,7 @@ Headly is an app thats show breaking news headlines with an real time fact-check
 
 Visit the [Discussions](https://github.com/lucasm/headly/discussions) public forum.
 
-You can become a [Patreon](https://patreon.com/lucasmezs) to support active development, help pay app costs and get benefits as early access to Beta releases.
+You can become a [Patreon](https://patreon.com/lucasmezs) to support active development, help pay app costs and get benefits as early access.
 
 See the [Project](https://github.com/lucasm/headly/projects/1?fullscreen=true) development board.
 
