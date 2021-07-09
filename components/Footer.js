@@ -27,7 +27,7 @@ import SelectLocale from './SelectLocale'
           <li><a href="https://github.com/lucasm/headly" target="_blank" rel="noopener">{props.about}</a></li>
           <li><a href="https://lucasm.dev/privacy" target="_blank" rel="noopener">{props.privacy}</a></li>
           <li><a href="https://patreon.com/lucasm" target="_blank" rel="noopener">♥ {props.donate}</a></li>
-          <li><a href="mailto:feedback@headly.app">{props.feedback}</a></li>
+          <li><a href="mailto:feedback@headly.app?subject=Feedback">{props.feedback}</a></li>
         </ul>
 
       </div>

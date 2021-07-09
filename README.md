@@ -33,9 +33,9 @@ Headly app show breaking news headlines and fact-checking powered by trusted and
 
 ## Contributing
 
-Visit the [Discussions forum](https://github.com/lucasm/headly/discussions).
+You can [become a Patreon](https://patreon.com/lucasm) to support active development, help pay app costs and get benefits as early access.
 
-You can [become a Patreon](https://patreon.com/lucasmezs) to support active development, help pay app costs and get benefits as early access.
+Visit the [Discussions forum](https://github.com/lucasm/headly/discussions).
 
 See the [Project development board](https://github.com/lucasm/headly/projects/1?fullscreen=true).
 

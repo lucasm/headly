@@ -79,22 +79,22 @@ const getFeedByName = (callback) => {
 		if (err) {
 			console.log(err);
 			return callback([{
-				"title": "Error fetching feed, click to send feeback",
-				"link": "mailto:feedback@headly.app"
+				"title": "Error - click to send feeback",
+				"link": "mailto:feedback@headly.app?subject=Feedback&body=Error%20in%20" + feedUrl
 			  }]);
+		} else {
+
+			var a = [];
+
+			for ( var i in feed.items.slice(0, 3) ) {
+				a.push({
+					"title": feed.items[i].title.replace(feedFilter, ""),
+					"link": feed.items[i].link + "?utm_source=headly_app"
+				});
+			}
+			console.log(a);
+			return callback(a);
 		}
-
-		var a = [];
-
-		for ( var i in feed.items.slice(0, 3) ) {
-			a.push({
-				"title": feed.items[i].title.replace(feedFilter, ""),
-				"link": feed.items[i].link + "?utm_source=headly_app"
-			});
-		}
-
-		console.log(a);
-		return callback(a);
 	});
 }
 
