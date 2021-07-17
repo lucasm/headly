@@ -1,5 +1,5 @@
 export default {
-    title: 'Headly — News for critical people',
+    title: 'Headly — News for the critical sense',
     description: 'News reader for the critical sense. Headlines, fact-checking and opnions from trusted journalism.',
     legal: 'All news are provided by external sources and are not revised or endorsed. All trademarks belong to their respective owners. All rights reserved to them.',
     about: 'About',

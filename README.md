@@ -12,7 +12,7 @@
 <img alt="License" src="https://img.shields.io/github/license/lucasm/headly?color=37bf5d">
 </p>
 <p align="center">
-News for critical people.<br>
+News for the critical sense.<br>
 </p>
 
 
@@ -22,18 +22,18 @@ Headly app show breaking news headlines and fact-checking powered by trusted and
 
 -  **Newest** — Breaking news headlines.
 
--  **Trusted journalism** — Sources approved by community, with focus on liberty of expression, critical sense, democracy and human rights.
+-  **Trusted journalism** — Sources approved by community, focused in liberty of expression, critical sense, democracy and human rights.
 
 -  **International** — Editions available by country.
 
--  **Accessibility** — Easy to read and navigate, fast on slow internet connections and featuring free access journalism above paywall.
+-  **Accessibility** — Easy to read and navigate, fast on slow connections and featuring free access journalism above paywall.
 
 -  **Real time fact-check** — SOON.
 
 
 ## Contributing
 
-You can [become a Patreon](https://patreon.com/lucasm) to support active development, help pay app costs and get benefits as early access.
+You can [become a supporter on Patreon](https://patreon.com/lucasm) to help pay app costs, maintain active development and get benefits as early access.
 
 Visit the [Discussions forum](https://github.com/lucasm/headly/discussions).
 

@@ -1,5 +1,5 @@
 export default {
-    title: 'Headly — Notícias para pessoas críticas',
+    title: 'Headly — Notícias para o senso crítico',
     description: 'Manchetes de notícias e checagem de fatos do jornalismo confiável para o seu senso crítico.',
     legal: 'Todas as notícias são obtidas de fontes externas e não sofrem revisão. Todas as marcas registradas pertencem aos seus respectivos proprietários. Todos os direitos reservados a eles.',
     about: 'Sobre',
