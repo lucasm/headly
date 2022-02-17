@@ -5,12 +5,10 @@ import CardFeedFetch from './CardFeedFetch';
 
 export default function Card(props) {
 
-    // load feed file to preload cards
+    // load feeds file to preload cards
     const feed = require('../locales/feeds/'+props.country+'.json');
 
-    /*
-        normalize name as ID (to match with path of SVG filenames)
-    */
+    // normalize name as ID (to match with path of SVG filenames)
     function generateId(string) {
         let id = string
         .toLowerCase()

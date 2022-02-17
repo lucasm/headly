@@ -3,9 +3,11 @@
 import Parser from 'rss-parser';
 let parser = new Parser();
 
+// set vars
 var feedCountry, feedCategory, feedName = '';
 var feedFilter = {};
 
+// set values from feeds files
 function setValues(country, category) {
 
 	feedCountry = require('../../locales/feeds/'+country+'.json');
@@ -13,8 +15,8 @@ function setValues(country, category) {
 	feedCategory = category;
 }
 
-// fetch feeds
-const getFeedByCategory = async(callback) => {
+// fetch all feeds by Category
+async function getFeedByCategory(callback) {
 
 	var ids = [];
 	var theFeed = [];
@@ -25,15 +27,15 @@ const getFeedByCategory = async(callback) => {
 
 			ids.push(i.name);
 
-			return parser.parseURL(i.feed)
-		})) 
+			return parser.parseURL(i.feed);
+		}));
 		await Promise.all(feeds.map(i => {
 
 			theFeed.push({
 				"title": i.title,
 				"items": i.items.slice(0, 3)
 			});
-		}))
+		}));
 
 		// filtering responses
 		for (var i in ids) {
@@ -42,25 +44,26 @@ const getFeedByCategory = async(callback) => {
 				'id': ids[i],
 				'feedName': theFeed[i].title,
 				'feedItems': []
-			})
+			});
 
 			for (var j in theFeed[i].items) {
 
 				filteredFeed[i].feedItems.push({
 					'title': theFeed[i].items[j].title,
 					'link': theFeed[i].items[j].link + "?utm_source=headly_app"
-				})
+				});
 			}
 		}
-		
+
 		console.log(filteredFeed);
 		return callback(filteredFeed);
 
-	} catch(err) {
+	} catch (err) {
 		console.log('Error getting Feed by Category', err);
 		return callback(err);
 	}
 }
+// fetch one feed by Name
 const getFeedByName = (callback) => {
 
 	var feedUrl = '';
@@ -68,7 +71,8 @@ const getFeedByName = (callback) => {
 	// iterate to find feed
 	for ( var i in feedCountry[feedCategory] ) {
 		if (feedName == feedCountry[feedCategory][i].name) {
-			// store feed URL
+
+			// set feed URL
 			feedUrl = feedCountry[feedCategory][i].feed;
 		}
 	}
@@ -77,11 +81,13 @@ const getFeedByName = (callback) => {
 	parser.parseURL(feedUrl, (err, feed) => {
 
 		if (err) {
+			
 			console.log(err);
 			return callback([{
-				"title": "Error - click to send feeback",
+				"title": "Error - backend fetch",
 				"link": "mailto:feedback@headly.app?subject=Feedback&body=Error%20in%20" + feedUrl
-			  }]);
+			}]);
+			
 		} else {
 
 			var a = [];
@@ -98,29 +104,29 @@ const getFeedByName = (callback) => {
 	});
 }
 
+// serve api endpoints
 export default function handler(req, res) {
 
-    // parameters
+    // set query parameters
     const {
 		query: {country},
 		query: {category},
 		query: {name}
 	  } = req
 
-	// endpoints
-	if ( country && category && name ) { // single feed by Name
+	// 1 - one feed by name
+	if ( country && category && name ) {
 
 		setValues(country, category);
 		feedName = name;
-
 		getFeedByName(function(data) {
 			res.status(200).send(data);
 		});
 
-	} else if ( country && category ) { // all feeds by Category
+	// 2 - all feeds by Category
+	} else if ( country && category ) { 
 
 		setValues(country, category);
-
 		getFeedByCategory(function(data) {
 			res.status(200).send(data);
 		});
