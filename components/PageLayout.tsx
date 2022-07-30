@@ -12,9 +12,6 @@ export default function PageLayout(props) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
-
         <meta name="theme-color" content="#fff" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Headly" />
@@ -51,28 +48,6 @@ export default function PageLayout(props) {
         <meta name="twitter:title" content="Headly" />
         <meta name="twitter:description" content={props.description} />
         <meta name="twitter:image" content="https://headly.app/images/headly-share.png"></meta>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-89JR74CJC7"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-			
-				gtag('config', 'G-89JR74CJC7');
-				`,
-          }}></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-			(function(c,l,a,r,i,t,y){
-				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-			})(window, document, "clarity", "script", "5d4q9fkiga");
-			`,
-          }}></script>
       </Head>
 
       <Header

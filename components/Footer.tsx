@@ -28,7 +28,7 @@ export default function Footer(props) {
 
         <p>
           {props.legal} {props.credits}{' '}
-          <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="noopener">
+          <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="external noreferrer">
             Lucas Menezes
           </a>
           .
@@ -36,17 +36,17 @@ export default function Footer(props) {
 
         <ul>
           <li>
-            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener">
+            <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noreferrer">
               ♥ {props.donate}
             </a>
           </li>
           <li>
-            <a href="https://github.com/lucasm/headly" target="_blank" rel="noopener">
+            <a href="https://github.com/lucasm/headly" target="_blank" rel="external noopener noreferrer">
               {props.about}
             </a>
           </li>
           <li>
-            <a href="https://lucasm.dev/privacy" target="_blank" rel="noopener">
+            <a href="https://lucasm.dev/privacy" target="_blank" rel="external noopener noreferrer">
               {props.privacy}
             </a>
           </li>

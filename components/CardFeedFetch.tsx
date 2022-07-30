@@ -31,13 +31,13 @@ export default function CardFeedFetch(props: Props) {
           },
         ])
       })
-  }, [])
+  }, [props.category, props.country, props.name])
 
   return (
     <ul>
       {data.map((item) => (
         <li key={item.title}>
-          <a href={item.link} target="_blank" rel="external noopener">
+          <a href={item.link} target="_blank" rel="external noopener noreferrer">
             {item.title}
           </a>
         </li>

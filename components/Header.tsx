@@ -74,7 +74,7 @@ export default function Header(props) {
             </a>
           </li>
         </ul>
-        <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener" className="button">
+        <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noopener noreferrer" className="button">
           ♥&#160;&#160;{props.donate}
         </a>
       </nav>
