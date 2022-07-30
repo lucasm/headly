@@ -1,37 +1,75 @@
 :root {
   font-size: 16px;
-  --cor-cinza: #f1f1f1;
-  --radius: 6px;
+  --radius: 8px;
   --shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
-  --familia-fonte: 'IBM Plex Sans', monospace;
+  --font: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', monospace;
+  --color-black: #000000;
+  --color-grey: #606f7b;
+  --color-translucent: rgba(255, 255, 255, 0.15);
+  --color-yellow: #ffa04f;
+  --color-orange: #ff7157;
+  --color-red: #ff546b;
+  --color-pink: #f357a8;
+  --color-purple: #9f5bf6;
+  --color-blue: #5475ff;
+  --color-cyan: #00b7ca;
+  --color-green: #00bd77;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
+#news {
+  background: var(--color-red);
+}
+#tech {
+  background: var(--color-blue);
+}
+#biz {
+  background: var(--color-green);
+}
+#sport {
+  background: var(--color-yellow);
+}
+#cult {
+  background: var(--color-purple);
+}
+#geek {
+  background: var(--color-pink);
+}
+#sci {
+  background: var(--color-cyan);
+}
+#check {
+  background: var(--color-grey);
+}
+#dscvr {
+  background: var(--color-orange);
+}
 
-#news { background: #ff546b; }
-#check { background: #606f7b; }
-#tech { background: #5475ff; }
-#biz { background: #00bd77; }
-.yellow { background: #ffa04f; }
-.purple { background: #9f5bf6; }
-.aqua { background: #00b7ca; }
-.pink { background: #f357a8; }
-.orange { background: #ff7157; }
-.black { background: #34495e; }
-
-.svg { fill: #000; }
+svg,
+.svg {
+  fill: var(--color-black);
+}
 
 html {
   scroll-behavior: smooth;
 }
-html, body, main, .PageLayout {
+html,
+body,
+main,
+.PageLayout {
   position: relative;
   height: 100%;
 }
 body {
   display: block;
   text-align: center;
-  font-family: var(--familia-fonte);
+  font-family: var(--font);
   font-size: 0;
   background: #fff;
 }
@@ -43,43 +81,45 @@ header {
   background: transparent;
   z-index: 999;
 }
-header .button{
+header .button {
   float: revert;
 }
 
 #logo {
   float: left;
-  padding: .75rem;
+  padding: 0.75rem;
   line-height: 0;
   z-index: 4;
 }
 #logo svg {
   fill: #fff;
 }
-#logo, #menu {
+#logo,
+#menu {
   position: relative;
   width: 48px;
   height: 48px;
   font-size: 0;
   background: rgba(255, 255, 255, 0.1);
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 #menu {
   float: right;
   z-index: 9;
   outline: none;
-  padding-left: .75rem;
+  padding-left: 0.75rem;
 }
 .hamburger {
   position: relative;
   width: 24px;
   height: 3px;
   background: #fff;
-  transition: all .25s;
+  transition: all 0.25s;
   border-radius: 1rem;
 }
-.hamburger:before, .hamburger:after {
+.hamburger:before,
+.hamburger:after {
   content: '';
   position: absolute;
   display: block;
@@ -88,7 +128,7 @@ header .button{
   height: 3px;
   background: #fff;
   z-index: 1;
-  transition: all .25s;
+  transition: all 0.25s;
   border-radius: 1rem;
 }
 .hamburger:before {
@@ -118,13 +158,16 @@ nav.open #logo svg {
   fill: #000;
 }
 
-#menu, #logo {
+#menu,
+#logo {
   box-shadow: var(--shadow);
 }
-#menu.open, #logo.open {
+#menu.open,
+#logo.open {
   box-shadow: none;
 }
-#menu:hover, #logo:hover {
+#menu:hover,
+#logo:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -136,9 +179,9 @@ nav.open #logo svg {
   height: 1px;
   border-radius: 50%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-  transition: box-shadow .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
   z-index: 2;
- }
+}
 .layer-active {
   box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
 }
@@ -218,54 +261,81 @@ button {
   cursor: pointer;
   border: none;
 }
-a, button, .svg {
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -ms-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
+a,
+button,
+.svg {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
-p, li, h1, h2, h3, h4, h5, h6 {
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
   padding-bottom: 2rem;
 }
-p, ul {
+p,
+ul {
   padding-bottom: 1.5rem;
 }
 ul {
   margin-left: 1.2rem;
 }
-p, li {
+p,
+li {
   font-weight: 400;
   line-height: 1.7;
 }
 li {
-  padding: 0 0 .5rem .5rem;
+  padding: 0 0 0.5rem 0.5rem;
 }
-h1, h2, h3, h4, a, b, strong, .button, button, input, select {
-  font-family: var(--familia-fonte);
+h1,
+h2,
+h3,
+h4,
+a,
+b,
+strong,
+.button,
+button,
+input,
+select {
+  font-family: var(--font);
   font-weight: 700;
 }
 
 h1 {
   font-size: 2.5rem;
 }
-h2, article h1 {
+h2,
+article h1 {
   font-size: 2rem;
 }
-h3, article h2 {
+h3,
+article h2 {
   font-size: 1.4rem;
 }
-h4, article h3 {
+h4,
+article h3 {
   font-size: 1.25rem;
 }
 
-p, li, .button {
+p,
+li,
+.button {
   font-size: 1rem;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #000;
 }
 
@@ -275,7 +345,8 @@ article {
   margin: 5.75rem auto 2rem;
   max-width: 650px;
 }
-article h2, article h3 {
+article h2,
+article h3 {
   padding: 3rem 0 1.5rem 0;
 }
 article ol {
@@ -287,7 +358,7 @@ article ul {
   padding: 0 0 28px 28px;
 }
 article li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 article blockquote {
   width: auto;
@@ -310,10 +381,11 @@ article blockquote {
   color: #fff;
   background: #000;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background: #fff;
   color: #000;
   box-shadow: var(--shadow);
@@ -350,23 +422,27 @@ article blockquote {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 1.5rem 2rem;
+  padding: 3rem 1.5rem 2rem;
 }
 footer ul {
   list-style-type: none;
   padding: 0;
 }
-footer li, footer p, footer label {
+footer li,
+footer p,
+footer label {
   font-size: 1rem;
   font-weight: bold;
   display: inline-block;
   padding: 0 0 1rem;
 }
-footer a, footer p, footer label {
+footer a,
+footer p,
+footer label {
   color: #aaa;
 }
 footer li {
-  padding: .75rem;
+  padding: 0.5rem 0.75rem;
 }
 footer svg {
   width: 38px;
@@ -376,27 +452,36 @@ footer svg {
 footer a .svg {
   fill: #aaa;
 }
-footer a:hover .svg, footer a:focus .svg {
-  fill: #000;
+footer a:hover .svg,
+footer a:focus .svg {
+  fill: var(--color-black);
 }
 
 select {
   cursor: pointer;
-  font-weight: bold;
   font-size: 1rem;
-  padding: .3rem .5rem;
-  margin: 0 .5rem;
-  border-radius: 6px;
-  border: 2px solid #000;
-  color: #000;
-  opacity: .35;
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: var(--radius);
+  border: 2.5px solid var(--color-black);
+  color: var(--color-black);
+  opacity: 0.35;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.2rem;
+  background-position: 96% 58%;
+  padding-right: 2rem;
 }
-select:hover, select:focus {
+select:hover,
+select:focus {
   opacity: 1;
 }
 
 form {
-  margin: .5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
 }
 /* Animations */
 section .container {
@@ -467,14 +552,14 @@ section .container {
   right: 0;
   left: 0;
   top: -5rem;
-  color: rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, 0.1);
   font-size: 7vw;
   padding: 1.5rem 0;
+  text-transform: uppercase;
 }
 
 /* tablet */
 @media only screen and (min-width: 812px) {
-
   .layer {
     top: 2rem;
     right: 4.25rem;
@@ -491,25 +576,32 @@ section .container {
   h1 {
     font-size: 3.5rem;
   }
-  h2, article h1 {
+  h2,
+  article h1 {
     font-size: 2.5rem;
   }
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 1.5rem;
   }
-  p, li, .button, input, textarea {
+  p,
+  li,
+  .button,
+  input,
+  textarea {
     font-size: 1rem;
   }
   header {
-    padding: 0 2.25rem;
+    padding: 0 2rem;
   }
-  #logo, #menu {
+  #logo,
+  #menu {
     width: 64px;
     height: 64px;
     padding: 1.25rem;
   }
   section {
-    padding: 5rem 7.75rem;
+    padding: 5rem 7rem;
   }
   .col {
     display: flex;
@@ -536,7 +628,6 @@ section .container {
 }
 /* desktop */
 @media only screen and (min-width: 1200px) {
-
   body {
     background: #fff;
   }

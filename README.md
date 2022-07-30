@@ -15,37 +15,32 @@
 News for the critical sense.<br>
 </p>
 
+## Breaking News Headlines App
 
-## News headlines app
+Headly is an international breaking news headlines web app (PWA) powered by trusted journalism sources and fact-checking agencieis, encouraging peoples critical sense and global fighting against misinformation.
 
-Headly is an internationalized news app thats show breaking headlines and fact-checking powered by trusted and diverse journalism sources, encouraging peoples critical sense and global fighting against misinformation.
+- **Newest** — Breaking news headlines.
 
--  **Newest** — Breaking news headlines.
+- **Trusted** — Journalism sources approved by community, focused in liberty of expression, critical sense, democracy and human rights.
 
--  **Trusted** — Journalism sources approved by community, focused in liberty of expression, critical sense, democracy and human rights.
+- **Internationalized** — Editions available by country.
 
--  **International** — Editions available by country.
+- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate.
 
--  **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate.
-
--  **Fact-check** — Features fact-checking by international recognized agencies.
-
+- **Fact-check** — Features fact-checking by international recognized agencies.
 
 ## Contributing
 
-You can [become a supporter on Patreon](https://patreon.com/lucasm) to maintain active development, help pay app costs and get benefits as early access!
+You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development, pay app costs and get benefits as early Beta access!
 
 - [Wiki](https://github.com/lucasm/headly/wiki) for app documentation and principles.
-- [Discussions forum](https://github.com/lucasm/headly/discussions) for general topics by community.
-- [Project board](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
+- [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.
+- [Projects](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
 
-Note: for code contributions, as bug fixes or add features, please open a new issue before sending your pull request.
-
+* Note for code contributors: please open a new issue before sending your pull request of bug fixes or features.
 
 ## Legal
 
-Code is MIT licensed.
+Code is MIT licensed. News provided by external sources. Trademarks belong to their respective owners. All rights reserved.
 
-Content is provided by third-parties. Trademarks belong to their respective owners. All rights reserved to them.
-
-Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly).
+Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo).

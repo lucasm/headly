@@ -1,0 +1,35 @@
+.load {
+  position: relative;
+  float: none;
+  display: inline-block;
+  width: 6rem;
+  height: 2rem;
+}
+.load .line:nth-last-child(1) {
+  animation: loadingB 1.5s 1s infinite;
+}
+.load .line:nth-last-child(2) {
+  animation: loadingB 1.5s 0.5s infinite;
+}
+.load .line:nth-last-child(3) {
+  animation: loadingB 1.5s 0s infinite;
+}
+.line {
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  border-radius: 2rem;
+  margin: 0.1rem;
+  background: var(--color-translucent);
+}
+@keyframes loadingB {
+  0% {
+    width: 1rem;
+  }
+  50% {
+    width: 3rem;
+  }
+  100% {
+    width: 1rem;
+  }
+}
