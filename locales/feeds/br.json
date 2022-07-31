@@ -57,7 +57,7 @@
       "url": "https://apublica.org/category/portugues/feed/"
     },
     {
-      "name": "Jacobin",
+      "name": "Jacobin Brasil",
       "url": "https://jacobin.com.br/feed/"
     },
     {
@@ -282,6 +282,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Folha| - O Globo| - UOL| - UOL Confere| - Política Estadão| - globoesporte.com| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - Revista Galileu/"
+    "keywords": "/ - Folha| - O Globo| - Globo| - UOL| - UOL Confere| - Política Estadão| - globoesporte.com| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - Revista Galileu/"
   }
 }

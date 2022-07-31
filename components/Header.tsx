@@ -70,10 +70,11 @@ export default function Header(props) {
               {props.dscvr}
             </a>
           </li>
-          <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noopener noreferrer" className="button">
-            ♥&#160;&#160;{props.donate}
-          </a>
         </ul>
+
+        <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noopener noreferrer" className="button">
+          ♥&#160;&#160;{props.donate}
+        </a>
       </nav>
 
       <div onClick={handleToggle} className={isActive ? 'layer layer-active' : 'layer'}></div>

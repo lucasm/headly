@@ -10,7 +10,7 @@
     },
     {
       "name": "CNN",
-      "url": "http://rss.cnn.com/rss/edition.rss"
+      "url": "http://rss.cnn.com/rss/cnn_world.rss"
     },
     {
       "name": "Vox",
@@ -49,6 +49,18 @@
       "url": "https://slate.com/feeds/news-and-politics.rss"
     },
     {
+      "name": "Jacobin",
+      "url": "https://jacobin.com/feed/"
+    },
+    {
+      "name": "New Republic",
+      "url": "https://newrepublic.com/rss.xml"
+    },
+    {
+      "name": "Mother Jones",
+      "url": "https://www.motherjones.com/feed"
+    },
+    {
       "name": "The Intercept",
       "url": "https://theintercept.com/feed/?lang=en"
     }
@@ -73,12 +85,12 @@
       "url": "http://www.theverge.com/rss/index.xml"
     },
     {
-      "name": "The Next Web",
-      "url": "https://thenextweb.com/feed/"
-    },
-    {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/feed/"
     },
     {
       "name": "Gizmodo",
@@ -111,6 +123,10 @@
     {
       "name": "Protocol",
       "url": "https://www.protocol.com/feeds/feed.rss"
+    },
+    {
+      "name": "Futurism",
+      "url": "https://futurism.com/feed"
     }
   ],
   "biz": [
@@ -187,12 +203,12 @@
   ],
   "cult": [
     {
-      "name": "Pitchfork",
-      "url": "https://pitchfork.com/feed/feed-news/rss"
-    },
-    {
       "name": "Billboard",
       "url": "https://www.billboard.com/feed/"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com/feed/feed-news/rss"
     },
     {
       "name": "EW",
@@ -237,20 +253,20 @@
       "url": "http://feeds.ign.com/ign/all"
     },
     {
-      "name": "GameSpot",
-      "url": "https://www.gamespot.com/feeds/mashup/"
-    },
-    {
       "name": "Polygon",
       "url": "https://www.polygon.com/rss/index.xml"
     },
     {
-      "name": "PC Gamer",
-      "url": "https://www.pcgamer.com/rss"
-    },
-    {
       "name": "Kotaku",
       "url": "https://kotaku.com/rss"
+    },
+    {
+      "name": "GameSpot",
+      "url": "https://www.gamespot.com/feeds/mashup/"
+    },
+    {
+      "name": "PC Gamer",
+      "url": "https://www.pcgamer.com/rss"
     },
     {
       "name": "RPS",
@@ -259,12 +275,12 @@
   ],
   "sci": [
     {
-      "name": "Nature",
-      "url": "http://feeds.nature.com/nature/rss/current"
-    },
-    {
       "name": "LiveScience",
       "url": "https://www.livescience.com/feeds/all"
+    },
+    {
+      "name": "Nature",
+      "url": "http://feeds.nature.com/nature/rss/current"
     },
     {
       "name": "Science Magazine",
@@ -272,15 +288,11 @@
     },
     {
       "name": "Discover",
-      "url": "http://feeds.feedburner.com/AllDiscovermagazinecomContent"
+      "url": "https://feeds.feedburner.com/AllDiscovermagazinecomContent"
     },
     {
       "name": "Futurity",
       "url": "https://www.futurity.org/feed/"
-    },
-    {
-      "name": "Futurism",
-      "url": "https://futurism.com/feed"
     },
     {
       "name": "Popular Science",
@@ -301,6 +313,10 @@
     {
       "name": "Greatist",
       "url": "https://greatist.com/feed"
+    },
+    {
+      "name": "Quanta Magazine",
+      "url": "https://api.quantamagazine.org/feed/"
     }
   ],
   "dscvr": [
@@ -315,14 +331,6 @@
     {
       "name": "Product Hunt",
       "url": "https://www.producthunt.com/feed"
-    },
-    {
-      "name": "Medium",
-      "url": "https://medium.com/feed/tag/popular"
-    },
-    {
-      "name": "Upworthy",
-      "url": "https://www.upworthy.com/feeds/feed.rss"
     }
   ],
   "filter": {

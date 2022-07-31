@@ -223,8 +223,9 @@ header nav .button {
   float: none;
   width: auto;
   margin: 2.5rem 0 0;
-  padding: 2rem;
   line-height: 0;
+  padding: 1.5rem;
+  font-size: 1.25rem;
   color: var(--color-white);
   background: var(--color-black);
   border: none;
@@ -564,7 +565,7 @@ section .container {
 }
 
 /* Tablet */
-@media only screen and (min-width: 812px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 3.5rem;
   }
@@ -587,7 +588,7 @@ section .container {
     width: 500px;
   }
   header nav a {
-    font-size: 1.75vw;
+    font-size: 2.5vw;
   }
   #logo,
   #menu {
@@ -600,7 +601,7 @@ section .container {
     right: -12vw;
     top: -12vw;
     left: unset;
-    font-size: 18vw;
+    font-size: 16vw;
   }
 
   section {
@@ -610,5 +611,12 @@ section .container {
   footer {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  header nav a {
+    font-size: 1.75vw;
   }
 }

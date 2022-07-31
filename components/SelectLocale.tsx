@@ -1,12 +1,12 @@
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router'
 
 export default function SelectLocale(props) {
-  const router = useRouter();
-  const { locale } = router;
+  const router = useRouter()
+  const { locale } = router
 
   function changeLanguage(e) {
-    const locale = e.target.value;
-    router.push(router.pathname, router.asPath, { locale });
+    const locale = e.target.value
+    router.push(router.pathname, router.asPath, { locale })
   }
 
   return (
@@ -18,5 +18,5 @@ export default function SelectLocale(props) {
         <option value="pt-PT">Portugal</option>
       </select>
     </form>
-  );
+  )
 }

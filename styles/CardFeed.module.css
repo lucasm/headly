@@ -31,7 +31,7 @@
   float: left;
   margin: 0 0 1.5rem 0;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   background-color: transparent;
   background-position: 0 center;
   background-size: auto 2.5rem;
@@ -61,17 +61,17 @@
   font-size: 6vw;
 }
 .feed a {
-  color: #fff;
+  color: var(--color-white);
 }
 .feed a:hover,
 .feed a:focus {
-  text-decoration: underline;
+  color: var(--color-black) !important;
 }
 .feed ul li:nth-child(2) a {
   color: rgb(255 255 255 / 50%);
 }
 
-/* First featured top */
+/* First Top Featured */
 .feed div:first-child {
   margin: 1% 1% 5%;
   padding: 0 0 4rem;
@@ -110,10 +110,9 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 812px) {
+@media only screen and (min-width: 768px) {
   .feed figure {
     margin: -0.5rem 0 2rem 0;
-    height: 38px;
   }
   .feed div {
     max-width: 97%;
@@ -125,13 +124,14 @@
 
   /* First Top Featured */
   .feed div:first-child li:nth-child(1) {
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .feed div:first-child li:nth-child(2),
   .feed div:first-child li:nth-child(3) {
     font-size: 3vw;
   }
-  /* Duos */
+
+  /* Second Duos */
   .feed div:nth-child(2) li:nth-child(1),
   .feed div:nth-child(3) li:nth-child(1),
   .feed div:nth-child(7) li:nth-child(1),
@@ -141,7 +141,7 @@
     font-size: 2.25vw;
   }
 
-  /* Minis */
+  /* Third Minis */
   .feed div:nth-child(4) li:nth-child(1),
   .feed div:nth-child(5) li:nth-child(1),
   .feed div:nth-child(6) li:nth-child(1),
@@ -156,7 +156,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .feed figure {
     margin-top: -1rem;
   }
@@ -174,7 +174,7 @@
     background-position: center 3.5rem;
   }
   .feed div:first-child li:nth-child(1) {
-    font-size: 3.5vw;
+    font-size: 3.75vw;
   }
   .feed div:first-child li:nth-child(2),
   .feed div:first-child li:nth-child(3) {
