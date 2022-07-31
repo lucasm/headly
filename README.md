@@ -17,26 +17,26 @@ News for the critical sense.<br>
 
 ## Breaking News Headlines App
 
-Headly is an international breaking news headlines web app (PWA) powered by trusted journalism sources and fact-checking agencieis, encouraging peoples critical sense and global fighting against misinformation.
+Headly is an international breaking news headlines app (Progressive Web App) powered by trusted journalism sources and fact-checking agencieis. Headly encourages critical sense and global fighting against misinformation.
 
 - **Newest** — Breaking news headlines.
 
-- **Trusted** — Journalism sources approved by community, focused in liberty of expression, critical sense, democracy and human rights.
+- **Trusted** — Renowned journalism sources focused in liberty of expression, critical sense, democracy and human rights.
 
 - **Internationalized** — Editions available by country.
 
-- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate.
+- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate for disabilities people.
 
 - **Fact-check** — Features fact-checking by international recognized agencies.
 
-## Contributing
+## Contribute
 
-You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
+You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early access!
 
 - [Wiki](https://github.com/lucasm/headly/wiki) for app documentation and principles.
 - [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.
 - [Projects](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
-- Code contributors: please open a new issue before sending your pull request of bug fixes or features.
+- Code contributors: please open a new issue before send pull requests of bug fixes or features.
 
 ## Legal
 

@@ -31,11 +31,15 @@ export default function Card(props: Props) {
 
   console.log('LAYOUT CARD MOUNTED', props.category)
 
-  // .sort(() => Math.random() - 0.5))
+  //
+
+  useEffect(() => {
+    setFeeds(feed[props.category].sort(() => Math.random() - 0.5))
+  }, [feed, feeds, props.category])
 
   return (
     <div className={styles.feed}>
-      {feed[props.category].map((item) => (
+      {feeds.map((item) => (
         <div key={props.country + item.name} id={normalizeId(item.name)}>
           <figure
             style={{

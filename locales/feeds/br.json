@@ -17,12 +17,12 @@
       "url": "https://www.cnnbrasil.com.br/feed/"
     },
     {
-      "name": "O Globo",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:oglobo.globo.com&hl=pt-BR&gl=BR"
-    },
-    {
       "name": "Estadão",
       "url": "https://news.google.com/rss/search?q=when:24h+allinurl:politica.estadao.com.br&hl=pt-BR&gl=BR"
+    },
+    {
+      "name": "Poder360",
+      "url": "https://www.poder360.com.br/feed/"
     },
     {
       "name": "Veja",
@@ -41,8 +41,8 @@
       "url": "https://revistaforum.com.br/rss/un_foto.html"
     },
     {
-      "name": "Poder360",
-      "url": "https://www.poder360.com.br/feed/"
+      "name": "O Globo",
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:oglobo.globo.com&hl=pt-BR&gl=BR"
     },
     {
       "name": "Nexo Jornal",
@@ -119,10 +119,6 @@
     {
       "name": "Diolinux",
       "url": "https://feeds.feedburner.com/Diolinux"
-    },
-    {
-      "name": "Oficina da Net",
-      "url": "https://www.oficinadanet.com.br/rss/geral"
     }
   ],
   "biz": [
@@ -279,6 +275,10 @@
     {
       "name": "Nao Intendo",
       "url": "https://feeds.feedburner.com/naointendo"
+    },
+    {
+      "name": "Sensacionalista",
+      "url": "https://blogs.oglobo.globo.com/sensacionalista/rss/ultimas.feed"
     }
   ],
   "filter": {
