@@ -9,9 +9,9 @@ export default function PageLayout(props) {
         <title>{props.title}</title>
         <meta name="description" content={props.description} />
         <meta name="author" content="Lucas Menezes" />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+        <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#fff" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Headly" />
@@ -27,7 +27,7 @@ export default function PageLayout(props) {
         <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png" />
         <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#fff" />
+        <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#000" />
 
         <meta name="msapplication-tap-highlight" content="no" />
 

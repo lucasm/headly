@@ -7,9 +7,9 @@
 <a href="https://headly.app/">Headly</a>
 </h1>
 <p align="center">
-<img alt="Languages" src="https://img.shields.io/badge/languages available -3-ffde17">
-<img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff7979">
-<img alt="License" src="https://img.shields.io/github/license/lucasm/headly?color=ff99e8">
+<img  alt="Languages"  src="https://img.shields.io/badge/languages available-3-ffde17">
+<img  alt="Issues"  src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
+<img  alt="License"  src="https://img.shields.io/github/license/lucasm/headly?color=ff7157">
 </p>
 <p align="center">
 News for the critical sense.<br>
