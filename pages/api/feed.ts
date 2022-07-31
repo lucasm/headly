@@ -90,7 +90,7 @@ async function getByName(callback): Promise<void> {
       return callback([
         {
           title: 'Ooopss!',
-          link: 'mailto:feedback@headly.app?subject=Headly%20Feedback&body=Error%20in%20' + feedName,
+          link: 'mailto:feedback@headly.app?subject=Headly%20Feedback&body=Error%20in%20backend%20of%20' + feedName,
         },
       ])
     }

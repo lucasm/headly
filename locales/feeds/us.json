@@ -121,12 +121,16 @@
       "url": "https://mashable.com/feeds/rss/all"
     },
     {
+      "name": "Futurism",
+      "url": "https://futurism.com/feed"
+    },
+    {
       "name": "Protocol",
       "url": "https://www.protocol.com/feeds/feed.rss"
     },
     {
-      "name": "Futurism",
-      "url": "https://futurism.com/feed"
+      "name": "Computerworld",
+      "url": "https://www.computerworld.com/index.rss"
     }
   ],
   "biz": [

@@ -26,8 +26,8 @@ export default function CardFeedFetch(props: Props) {
         setLoading(false)
         setData([
           {
-            title: 'Error - frontend fetch',
-            link: 'mailto:feedback@headly.app?subject=Feedback&body=Error%20in%20' + props.name,
+            title: 'Ooopss!',
+            link: 'mailto:feedback@headly.app?subject=Feedback&body=Error%20in%20frontend%20of%20' + props.name,
           },
         ])
       })
