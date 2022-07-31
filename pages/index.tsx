@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import PageLayout from '../components/PageLayout'
-import VerticalNav from '../components/VerticalNav'
 import CardFeed from '../components/CardFeed'
 
 // locales
@@ -45,22 +44,10 @@ export default function Index() {
       geek={t.geek}
       sci={t.sci}
       dscvr={t.dscvr}>
-      <VerticalNav
-        news={t.news}
-        check={t.check}
-        tech={t.tech}
-        biz={t.biz}
-        sport={t.sport}
-        cult={t.cult}
-        geek={t.geek}
-        sci={t.sci}
-        dscvr={t.dscvr}
-      />
-
+      {/* <FetchFeeds country="us" category="news"/> */}
       <section id="news">
         <div className="feedSection">
           <h2>{t.news}</h2>
-          {/* <FetchFeeds country="us" category="news"/> */}
           <CardFeed country={t.country} category="news" />
         </div>
       </section>

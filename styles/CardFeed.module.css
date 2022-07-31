@@ -16,7 +16,7 @@
   margin: 0 0 1rem;
   padding: 2rem;
   text-align: left;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-translucent);
   box-sizing: border-box;
   transition: all 0.25s;
   border-radius: 1rem;
@@ -25,9 +25,7 @@
 .feed div:not(:first-child) {
   box-shadow: var(--shadow);
 }
-.feed div:not(:first-child):hover {
-  background: rgba(255, 255, 255, 0.125);
-}
+
 .feed figure {
   position: relative;
   float: left;
@@ -67,7 +65,7 @@
 }
 .feed a:hover,
 .feed a:focus {
-  color: #000 !important;
+  text-decoration: underline;
 }
 .feed ul li:nth-child(2) a {
   color: rgb(255 255 255 / 50%);
@@ -76,11 +74,10 @@
 /* First featured top */
 .feed div:first-child {
   margin: 1% 1% 5%;
-  padding: 3rem 0 4rem;
+  padding: 0 0 4rem;
   text-align: center;
   background-position: center 2rem;
   background-color: transparent;
-  border-top: 1.2rem solid #fff;
 }
 .feed div:first-child figure {
   float: none;
@@ -173,13 +170,11 @@
   /* First Top Featured */
   .feed div:first-child {
     margin: 1% 1% 5%;
-    padding: 4rem 7vw;
+    padding: 2rem 7vw;
     background-position: center 3.5rem;
-    border-left: 1.2rem solid #fff;
-    border-right: 1.2rem solid #fff;
   }
   .feed div:first-child li:nth-child(1) {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
   .feed div:first-child li:nth-child(2),
   .feed div:first-child li:nth-child(3) {

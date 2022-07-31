@@ -1,5 +1,3 @@
-// components/Footer.js
-
 import Link from 'next/link'
 import SelectLocale from './SelectLocale'
 
@@ -7,7 +5,7 @@ export default function Footer(props) {
   return (
     <footer>
       <div className="container">
-        <div>
+        <div className="containerLogo">
           <Link href="/">
             <a aria-label="homepage">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
@@ -19,15 +17,11 @@ export default function Footer(props) {
               Headly
             </a>
           </Link>
+          <SelectLocale edition={props.edition} />
         </div>
 
-        <p>{props.title}</p>
-        <br />
-
-        <SelectLocale edition={props.edition} />
-
         <p>
-          {props.legal} {props.credits}{' '}
+          Headly. {props.legal} {props.credits}{' '}
           <a href="https://lucasm.dev/?utm_source=headly_app" target="_blank" rel="external noreferrer">
             Lucas Menezes
           </a>

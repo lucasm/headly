@@ -31,16 +31,15 @@ Headly is an international breaking news headlines web app (PWA) powered by trus
 
 ## Contributing
 
-You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development, pay app costs and get benefits as early Beta access!
+You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
 
 - [Wiki](https://github.com/lucasm/headly/wiki) for app documentation and principles.
 - [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.
 - [Projects](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
-
-* Note for code contributors: please open a new issue before sending your pull request of bug fixes or features.
+- Code contributors: please open a new issue before sending your pull request of bug fixes or features.
 
 ## Legal
 
-Code is MIT licensed. News provided by external sources. Trademarks belong to their respective owners. All rights reserved.
+Code is MIT licensed. All rights reserved to external news sources and their trademarks.
 
 Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo).

@@ -51,29 +51,26 @@ export default function PageLayout(props) {
       </Head>
 
       <Header
-        about={props.about}
         donate={props.donate}
         news={props.news}
-        check={props.check}
         tech={props.tech}
         biz={props.biz}
         sport={props.sport}
         cult={props.cult}
         geek={props.geek}
         sci={props.sci}
+        check={props.check}
         dscvr={props.dscvr}
       />
       <main>{props.children}</main>
 
       <Footer
-        title={props.title}
-        legal={props.legal}
         edition={props.edition}
+        legal={props.legal}
         credits={props.credits}
-        about={props.about}
-        contribute={props.contribute}
-        privacy={props.privacy}
         donate={props.donate}
+        about={props.about}
+        privacy={props.privacy}
         feedback={props.feedback}
       />
     </div>

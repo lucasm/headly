@@ -1,49 +1,45 @@
 {
   "news": [
-    { "name": "Público", "feed": "http://feeds.feedburner.com/PublicoRSS" },
+    { "name": "Público", "url": "http://feeds.feedburner.com/PublicoRSS" },
     {
       "name": "Observador",
-      "feed": "https://feeds.feedburner.com/obs-ultimas"
+      "url": "https://feeds.feedburner.com/obs-ultimas"
     },
-    { "name": "Diário de Notícias", "feed": "http://feeds.dn.pt/DN-Ultimas" },
-    { "name": "Jornal de Notícias", "feed": "http://feeds.jn.pt/JN-ULTIMAS" },
-    { "name": "Correio da Manhã", "feed": "https://www.cmjornal.pt/rss" },
-    { "name": "RTP", "feed": "https://www.rtp.pt/noticias/rss" }
+    { "name": "Diário de Notícias", "url": "http://feeds.dn.pt/DN-Ultimas" },
+    { "name": "Jornal de Notícias", "url": "http://feeds.jn.pt/JN-ULTIMAS" },
+    { "name": "Correio da Manhã", "url": "https://www.cmjornal.pt/rss" },
+    { "name": "RTP", "url": "https://www.rtp.pt/noticias/rss" }
   ],
-  "check": [{ "name": "Poligrafo", "feed": "https://poligrafo.sapo.pt/feed" }],
+  "check": [{ "name": "Poligrafo", "url": "https://poligrafo.sapo.pt/feed" }],
   "tech": [
-    { "name": "Pplware", "feed": "https://pplware.sapo.pt/feed/" },
+    { "name": "Pplware", "url": "https://pplware.sapo.pt/feed/" },
     {
       "name": "Exame Informatica",
-      "feed": "https://visao.sapo.pt/exameinformatica/feed/"
+      "url": "https://visao.sapo.pt/exameinformatica/feed/"
     },
-    { "name": "PC Guia", "feed": "https://www.pcguia.pt/feed/" },
-    { "name": "Bit Magazine", "feed": "https://www.bit.pt/feed" },
-    { "name": "Leak", "feed": "https://www.leak.pt/feed/" }
+    { "name": "PC Guia", "url": "https://www.pcguia.pt/feed/" },
+    { "name": "Bit Magazine", "url": "https://www.bit.pt/feed" },
+    { "name": "Leak", "url": "https://www.leak.pt/feed/" }
   ],
   "biz": [
     {
       "name": "Jornal de Negocios",
-      "feed": "https://www.jornaldenegocios.pt/rss"
+      "url": "https://www.jornaldenegocios.pt/rss"
     },
-    { "name": "Dinheiro Vivo", "feed": "https://www.dinheirovivo.pt/feed" },
+    { "name": "Dinheiro Vivo", "url": "https://www.dinheirovivo.pt/feed" },
     {
       "name": "O Jornal Economico",
-      "feed": "https://jornaleconomico.sapo.pt/feed"
+      "url": "https://jornaleconomico.sapo.pt/feed"
     }
   ],
   "sport": [
-    { "name": "A Bola", "feed": "https://abola.pt/rss" },
-    { "name": "O Jogo", "feed": "http://feeds.ojogo.pt/OJ-ULTIMAS" },
-    { "name": "Record", "feed": "https://www.record.pt/rss" }
+    { "name": "A Bola", "url": "https://abola.pt/rss" },
+    { "name": "O Jogo", "url": "http://feeds.ojogo.pt/OJ-ULTIMAS" },
+    { "name": "Record", "url": "https://www.record.pt/rss" }
   ],
-  "cult": [
-    { "name": "A Televisão", "feed": "https://www.atelevisao.com/feed/" }
-  ],
-  "geek": [{ "name": "IGN", "feed": "https://pt.ign.com/feed.xml" }],
-  "sci": [{ "name": "HypeScience", "feed": "https://hypescience.com/feed/" }],
-  "dscvr": [
-    { "name": "Reddit", "feed": "https://www.reddit.com/r/portugal/.rss" }
-  ],
+  "cult": [{ "name": "A Televisão", "url": "https://www.atelevisao.com/feed/" }],
+  "geek": [{ "name": "IGN", "url": "https://pt.ign.com/feed.xml" }],
+  "sci": [{ "name": "HypeScience", "url": "https://hypescience.com/feed/" }],
+  "dscvr": [{ "name": "Reddit", "url": "https://www.reddit.com/r/portugal/.rss" }],
   "filter": { "keywords": "" }
 }

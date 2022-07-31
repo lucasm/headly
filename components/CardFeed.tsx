@@ -29,7 +29,7 @@ export default function Card(props: Props) {
   // random
   const [feeds, setFeeds] = useState([])
 
-  console.log('#LAYOUT', props.category, 'cards generated')
+  console.log('LAYOUT CARD MOUNTED', props.category)
 
   // .sort(() => Math.random() - 0.5))
 

@@ -1,54 +1,63 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import Parser from 'rss-parser'
-let parser = new Parser()
+const parser = new Parser()
 
-// set vars
-var feedCountry,
-  feedCategory,
-  feedName = ''
-var feedFilter
+// set global params
+var feedCountry: any
+var feedCategory: string
+var feedName: string
+var feedKeywordsFilter: string
 
-// set values from feeds files
-function setValues(country, category) {
-  feedCountry = require('../../locales/feeds/' + country + '.json')
-  feedFilter = eval(feedCountry.filter['keywords'])
-  feedCategory = category
+interface IFeedFile {
+  name: string
+  url: string
 }
 
-// fetch all feeds by Category
-async function getFeedByCategory(callback) {
+// set values by request
+function setValues(country: string, category: string, name?: string) {
+  // get values from feed files
+  feedCountry = require('../../locales/feeds/' + country + '.json')
+  feedKeywordsFilter = eval(feedCountry.filter['keywords'])
+  feedCategory = category
+
+  if (name) {
+    feedName = name
+  }
+}
+
+// case 1: get feeds by categories
+async function getByCategory(callback): Promise<any> {
+  // get all feeds by category
   var ids = []
   var theFeed = []
-  var filteredFeed = []
 
   try {
     let feeds = await Promise.all(
-      feedCountry[feedCategory].map((i) => {
-        ids.push(i.name)
-
-        return parser.parseURL(i.feed)
+      feedCountry[feedCategory].map((item: IFeedFile) => {
+        ids.push(item.name)
+        return parser.parseURL(item.url)
       })
     )
     await Promise.all(
-      feeds.map((i) => {
+      feeds.map((item) => {
         theFeed.push({
-          title: i.title,
-          items: i.items.slice(0, 3),
+          title: item.title,
+          items: item.items.slice(0, 3),
         })
       })
     )
 
     // filtering responses
+    var filteredFeed = []
+
     for (var i in ids) {
       filteredFeed.push({
         id: ids[i],
-        feedName: theFeed[i].title,
-        feedItems: [],
+        feed_name: theFeed[i].title,
+        feed_items: [],
       })
 
       for (var j in theFeed[i].items) {
-        filteredFeed[i].feedItems.push({
+        filteredFeed[i].feed_items.push({
           title: theFeed[i].items[j].title,
           link: theFeed[i].items[j].link + '?utm_source=headly_app',
         })
@@ -57,73 +66,70 @@ async function getFeedByCategory(callback) {
 
     console.log(filteredFeed)
     return callback(filteredFeed)
-  } catch (err) {
-    console.log('Error getting Feed by Category', err)
-    return callback(err)
+  } catch (error) {
+    console.log('ERROR GETTING FEEDS BY CATEGORY', error)
+    return callback({ 'ERROR GETTING FEEDS BY CATEGORY': error })
   }
 }
-// fetch one feed by Name
-const getFeedByName = (callback) => {
-  var feedUrl = ''
 
-  // iterate to find feed
-  for (var i in feedCountry[feedCategory]) {
-    if (feedName == feedCountry[feedCategory][i].name) {
-      // set feed URL
-      feedUrl = feedCountry[feedCategory][i].feed
+// case 2: get feed by name
+async function getByName(callback): Promise<void> {
+  // set URL
+  let feedUrl = ''
+
+  feedCountry[feedCategory].forEach((item) => {
+    if (feedName === item.name) {
+      feedUrl = item.url
     }
-  }
+  })
 
-  // parser feed URL
-  parser.parseURL(feedUrl, (err, feed) => {
-    if (err) {
-      console.log(err)
+  // parse URL
+  await parser.parseURL(feedUrl, (error, feed) => {
+    if (error) {
+      console.log(error)
       return callback([
         {
-          title: 'Error - backend fetch',
-          link: 'mailto:feedback@headly.app?subject=Feedback&body=Error%20in%20' + feedUrl,
+          title: 'Ooopss!',
+          link: 'mailto:feedback@headly.app?subject=Headly%20Feedback&body=Error%20in%20' + feedName,
         },
       ])
-    } else {
-      var a = []
-
-      for (var i in feed.items.slice(0, 3)) {
-        a.push({
-          title: feed.items[i].title.replace(feedFilter, ''),
-          link: feed.items[i].link + '?utm_source=headly_app',
-        })
-      }
-      console.log(a)
-      return callback(a)
     }
+
+    var a = []
+
+    feed.items.slice(0, 3).forEach((item) => {
+      a.push({
+        title: item.title.replace(feedKeywordsFilter, ''),
+        link: item.link + '?utm_source=headly_app',
+      })
+    })
+
+    console.log(a)
+    return callback(a)
   })
 }
 
-// serve api endpoints
-export default function handler(req, res) {
+// serve endpoint
+export default function endpointFeed(request: any, response: any) {
   // set query parameters
   const {
     query: { country },
     query: { category },
     query: { name },
-  } = req
+  } = request
 
-  // 1 - one feed by name
   if (country && category && name) {
-    setValues(country, category)
-    feedName = name
-    getFeedByName(function (data) {
-      res.status(200).send(data)
+    setValues(country, category, name)
+    getByName(function (data) {
+      response.status(200).send(data)
     })
-
-    // 2 - all feeds by Category
   } else if (country && category) {
     setValues(country, category)
-    getFeedByCategory(function (data) {
-      res.status(200).send(data)
+    getByCategory(function (data) {
+      response.status(200).send(data)
     })
   } else {
     // error
-    res.status(405).end(`Error: missing or not allowed parameters | country: '${country}' | category: '${category}' | name: '${name}'`)
+    response.status(405).end(`Error: missing parameters | country: '${country}' | category: '${category}' | name: '${name}'`)
   }
 }

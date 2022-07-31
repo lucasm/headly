@@ -17,12 +17,12 @@ export default function CardFeedFetch(props: Props) {
         return response.json()
       })
       .then((responseJson) => {
-        console.log('feed', props.name, 'called:', responseJson)
+        console.log('GET', props.name, responseJson)
         setData(responseJson)
         setLoading(false)
       })
       .catch((error) => {
-        console.log(error)
+        console.log('GET ERROR', error)
         setLoading(false)
         setData([
           {

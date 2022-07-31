@@ -3,17 +3,22 @@
   --radius: 8px;
   --shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
   --font: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', monospace;
+  --color-white: #ffffff;
   --color-black: #000000;
+  --color-gray: #888888;
   --color-grey: #606f7b;
-  --color-translucent: rgba(255, 255, 255, 0.15);
+  --color-translucent: rgba(255, 255, 255, 0.1);
   --color-yellow: #ffa04f;
   --color-orange: #ff7157;
-  --color-red: #ff546b;
+  --color-red: #ff4e66;
   --color-pink: #f357a8;
   --color-purple: #9f5bf6;
   --color-blue: #5475ff;
   --color-cyan: #00b7ca;
   --color-green: #00bd77;
+  --opacity: 0.45;
+  --navDrawerDurationEnterMS: 250ms;
+  --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
 }
 *,
 *:after,
@@ -77,19 +82,14 @@ body {
 header {
   position: fixed;
   width: 100%;
-  padding: 0 1rem;
-  background: transparent;
+  padding: 1rem;
   z-index: 999;
-}
-header .button {
-  float: revert;
 }
 
 #logo {
   float: left;
   padding: 0.75rem;
   line-height: 0;
-  z-index: 4;
 }
 #logo svg {
   fill: #fff;
@@ -100,14 +100,18 @@ header .button {
   width: 48px;
   height: 48px;
   font-size: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  background: var(--color-translucent);
+  box-shadow: var(--shadow);
+  border-radius: 10rem;
 }
+#menu:hover,
+#logo:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 #menu {
   float: right;
   z-index: 9;
-  outline: none;
   padding-left: 0.75rem;
 }
 .hamburger {
@@ -154,80 +158,90 @@ header .button {
   transform: rotate(90deg);
   background: #000;
 }
-nav.open #logo svg {
-  fill: #000;
-}
-
-#menu,
-#logo {
-  box-shadow: var(--shadow);
-}
-#menu.open,
-#logo.open {
+#menu.open {
   box-shadow: none;
-}
-#menu:hover,
-#logo:hover {
-  background: rgba(255, 255, 255, 0.15);
 }
 
 .layer {
-  position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-  transition: box-shadow 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all;
   z-index: 2;
+  background: transparent;
+  display: none;
+  transition: var(--easingDecelerate);
 }
 .layer-active {
-  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-nav {
+header nav {
+  position: fixed;
   height: 100%;
   width: 100%;
-  position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
-  text-align: center;
+  background: var(--color-white);
+  transition: all var(--navDrawerDurationEnterMS) var(--easingDecelerate);
+  transform: translateX(50%);
   visibility: hidden;
   opacity: 0;
   z-index: 3;
-  background: #fff;
-  /* transition: visibility .25s, opacity .25s; */
 }
-nav.open {
+header nav.open {
   visibility: visible;
   opacity: 1;
+  transform: translateX(0);
 }
-nav ul {
-  list-style: none;
-  margin: 10vh;
-  padding: 0;
-  display: grid;
-  height: 60vh;
-  align-items: center;
-  grid-template-columns: 1fr;
-}
-nav li {
-  text-align: center;
-  padding: 0;
-}
-nav a {
+header nav ul {
   position: relative;
-  display: inline-block;
-  margin: 0;
+  width: 100%;
+  list-style: none;
+  margin: 5rem 0 0;
   padding: 0;
-  font-size: 1.5rem;
-  color: #aaa;
+}
+header nav ul li {
+  padding: 0;
+}
+header nav a {
+  display: inline-block;
+  padding: 0.25rem 4rem;
+  width: 100%;
+  font-size: 5vw;
+}
+header nav a:hover,
+header nav a:focus {
+  background: #eee;
+}
+
+header nav .button {
+  position: relative;
+  float: none;
+  width: auto;
+  margin: 2.5rem 0 0;
+  padding: 2rem;
+  line-height: 0;
+  color: var(--color-white);
+  background: var(--color-black);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+header nav .button:hover,
+header nav .button:focus {
+  background: var(--color-white);
+  color: var(--color-black);
+  box-shadow: var(--shadow);
 }
 
 section {
   width: 100%;
   padding: 5rem 1rem;
+  overflow: hidden;
 }
 .container {
   position: relative;
@@ -253,7 +267,7 @@ section {
 }
 
 a {
-  color: #000;
+  color: var(--color-black);
   font-weight: bold;
   text-decoration: none;
 }
@@ -275,10 +289,7 @@ p,
 li,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: #000;
   padding-bottom: 2rem;
 }
@@ -304,7 +315,6 @@ h4,
 a,
 b,
 strong,
-.button,
 button,
 input,
 select {
@@ -329,8 +339,7 @@ article h3 {
 }
 
 p,
-li,
-.button {
+li {
   font-size: 1rem;
 }
 
@@ -369,26 +378,6 @@ article blockquote {
   margin: 0 auto 2rem;
   color: #666;
   font-style: italic;
-}
-
-/* Buttons */
-.button {
-  position: relative;
-  float: left;
-  margin: 1rem 0 0;
-  padding: 0 1.25rem;
-  line-height: 40px;
-  color: #fff;
-  background: #000;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-.button:hover,
-.button:focus {
-  background: #fff;
-  color: #000;
-  box-shadow: var(--shadow);
 }
 
 /* Helpers */
@@ -434,27 +423,48 @@ footer label {
   font-size: 1rem;
   font-weight: bold;
   display: inline-block;
-  padding: 0 0 1rem;
+  padding: 1rem 0;
 }
 footer a,
 footer p,
 footer label {
-  color: #aaa;
+  color: var(--color-gray);
 }
 footer li {
   padding: 0.5rem 0.75rem;
 }
-footer svg {
+footer a svg {
   width: 38px;
-  fill: #aaa;
-  margin: 0 0 1rem;
 }
 footer a .svg {
-  fill: #aaa;
+  fill: var(--color-gray);
+}
+footer .containerLogo {
+  margin-bottom: 1rem;
+}
+footer .containerLogo form,
+footer .containerLogo svg {
+  float: none;
+  display: inline;
+  margin: 0 1rem 0;
+  vertical-align: middle;
+}
+
+footer select {
+  opacity: var(--opacity);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--color-black);
 }
 footer a:hover .svg,
 footer a:focus .svg {
   fill: var(--color-black);
+}
+footer select:hover,
+footer select:focus {
+  opacity: 1;
 }
 
 select {
@@ -465,7 +475,6 @@ select {
   border-radius: var(--radius);
   border: 2.5px solid var(--color-black);
   color: var(--color-black);
-  opacity: 0.35;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -475,14 +484,7 @@ select {
   background-position: 96% 58%;
   padding-right: 2rem;
 }
-select:hover,
-select:focus {
-  opacity: 1;
-}
 
-form {
-  margin: 0.5rem 0 1rem;
-}
 /* Animations */
 section .container {
   -webkit-animation-name: up;
@@ -546,89 +548,67 @@ section .container {
 .feedSection {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 .feedSection h2 {
   position: absolute;
   right: 0;
   left: 0;
-  top: -5rem;
-  color: rgba(255, 255, 255, 0.1);
-  font-size: 7vw;
-  padding: 1.5rem 0;
+  top: -6rem;
+  color: rgb(255 255 255 / 5%);
+  font-size: 12vw;
+  letter-spacing: -1vw;
   text-transform: uppercase;
+  user-select: none;
+  z-index: -1;
 }
 
-/* tablet */
+/* Tablet */
 @media only screen and (min-width: 812px) {
-  .layer {
-    top: 2rem;
-    right: 4.25rem;
-  }
-
-  nav ul {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  nav a {
-    padding: 2rem;
-    font-size: 3vw;
-  }
-
   h1 {
     font-size: 3.5rem;
   }
-  h2,
-  article h1 {
+  h2 {
     font-size: 2.5rem;
   }
-  h3,
-  h4 {
+  h3 {
     font-size: 1.5rem;
   }
   p,
   li,
-  .button,
   input,
   textarea {
     font-size: 1rem;
   }
   header {
-    padding: 0 2rem;
+    padding: 1.5rem;
+  }
+  header nav {
+    width: 500px;
+  }
+  header nav a {
+    font-size: 1.75vw;
   }
   #logo,
   #menu {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     padding: 1.25rem;
   }
+
+  .feedSection h2 {
+    right: -12vw;
+    top: -12vw;
+    left: unset;
+    font-size: 18vw;
+  }
+
   section {
-    padding: 5rem 7rem;
-  }
-  .col {
-    display: flex;
-  }
-  .col-left {
-    width: 45%;
-    margin-right: 10%;
-  }
-  .col-right {
-    width: 45%;
+    padding: 5rem 5.5rem;
   }
 
   footer {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-  .feedSection h2 {
-    right: -1rem;
-    top: unset;
-    left: unset;
-    font-size: 3.5vw;
-    padding: 3rem 0 0;
-  }
-}
-/* desktop */
-@media only screen and (min-width: 1200px) {
-  body {
-    background: #fff;
   }
 }

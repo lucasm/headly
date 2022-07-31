@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Header(props) {
-  const [isActive, setActive] = useState<boolean>(true)
+  const [isActive, setActive] = useState<boolean>(false)
 
   function handleToggle() {
     setActive(!isActive)
@@ -11,22 +11,19 @@ export default function Header(props) {
   return (
     <header>
       <Link href="/">
-        <a id="logo" aria-label="homepage" className={isActive ? null : 'open'}>
+        <a id="logo" aria-label="homepage">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <path
-              className={isActive ? null : 'svg'}
-              d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"
-            />
+            <path d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z" />
           </svg>
           Headly
         </a>
       </Link>
 
-      <button onClick={handleToggle} className={isActive ? null : 'open'} id="menu" type="button">
+      <button onClick={handleToggle} className={isActive ? 'open' : undefined} id="menu" type="button">
         Menu<div className="hamburger"></div>
       </button>
 
-      <nav className={isActive ? null : 'open'}>
+      <nav className={isActive ? 'open' : undefined}>
         <ul>
           <li>
             <a href="#news" onClick={handleToggle}>
@@ -73,13 +70,13 @@ export default function Header(props) {
               {props.dscvr}
             </a>
           </li>
+          <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noopener noreferrer" className="button">
+            ♥&#160;&#160;{props.donate}
+          </a>
         </ul>
-        <a href="https://github.com/sponsors/lucasm" target="_blank" rel="external noopener noreferrer" className="button">
-          ♥&#160;&#160;{props.donate}
-        </a>
       </nav>
 
-      <div className={isActive ? 'layer' : 'layer layer-active'}></div>
+      <div onClick={handleToggle} className={isActive ? 'layer layer-active' : 'layer'}></div>
     </header>
   )
 }
