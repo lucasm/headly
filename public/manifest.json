@@ -7,6 +7,14 @@
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
+  "orientation": "portrait-primary",
+  "shortcuts": [
+    {
+      "name": "Today's news",
+      "url": "/",
+      "description": "Breaking news headlines"
+    }
+  ],
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",

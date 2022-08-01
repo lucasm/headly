@@ -1,6 +1,6 @@
 export default {
   title: 'Headly — Breaking News Headlines',
-  description: 'News reader for the critical sense. Headlines, fact-checking and opinions from trusted journalism.',
+  description: 'Breaking news headlines from trusted journalism. Be critical. Fight against misinformation.',
   legal: 'All rights reserved to the news sources and trademarks.',
   about: 'About',
   privacy: 'Privacy',

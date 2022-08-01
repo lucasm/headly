@@ -1,6 +1,6 @@
 export default {
   title: 'Headly — Notícias de última hora',
-  description: 'Manchetes de notícias e checagem de fatos do jornalismo confiável para o seu senso crítico.',
+  description: 'Manchetes de notícias de última hora do jornalismo confiável. Seja crítico. Lute contra a desinformação.',
   legal: 'Todos os direitos reservados às fontes de notícias e marcas registradas.',
   about: 'Sobre',
   privacy: 'Privacidade',
