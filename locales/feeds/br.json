@@ -42,7 +42,7 @@
     },
     {
       "name": "O Globo",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:oglobo.globo.com&hl=pt-BR&gl=BR"
+      "url": "https://pox.globo.com/rss/oglobo/"
     },
     {
       "name": "Nexo Jornal",
@@ -248,7 +248,7 @@
     },
     {
       "name": "Revista Galileu",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:revistagalileu.globo.com&hl=pt-BR&gl=BR"
+      "url": "https://pox.globo.com/rss/galileu"
     },
     {
       "name": "Ciencia Hoje",
@@ -282,6 +282,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Folha| - O Globo| - Globo| - globo.com| - UOL Confere| - UOL| - Política Estadão| - globoesporte.com| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - Revista Galileu/"
+    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem/"
   }
 }
