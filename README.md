@@ -4,20 +4,20 @@
 </a>
 </div>
 <h1 align="center">
-<a href="https://headly.app/">Headly</a>
+<a href="https://headly.app/">Headly.app</a>
 </h1>
 <p align="center">
-<img  alt="Languages"  src="https://img.shields.io/badge/languages available-3-ffde17">
-<img  alt="Issues"  src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
-<img  alt="License"  src="https://img.shields.io/github/license/lucasm/headly?color=ff7157">
+<img alt="Languages" src="https://img.shields.io/badge/languages available-3-ffde17">
+<img alt="License" src="https://img.shields.io/github/license/lucasm/headly?color=ff7157">
+<img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
 </p>
 <p align="center">
-News for the critical sense.<br>
+Trusted journalism to fight against misinformation<br>
 </p>
 
 ## Breaking News Headlines App
 
-Headly is an international breaking news headlines app (Progressive Web App) powered by trusted journalism sources and fact-checking agencieis. Headly encourages critical sense and global fighting against misinformation.
+Headly is a breaking news headlines app (Progressive Web App) internationalized and powered by trusted journalism sources and fact-checking agencieis. Headly encourages the global fighting against misinformation.
 
 - **Newest** — Breaking news headlines.
 
@@ -25,21 +25,19 @@ Headly is an international breaking news headlines app (Progressive Web App) pow
 
 - **Internationalized** — Editions available by country.
 
-- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate for disabilities people.
+- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate for any people.
 
 - **Fact-check** — Features fact-checking by international recognized agencies.
 
 ## Contribute
 
-You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early access!
+You can [become a GitHub sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
 
 - [Wiki](https://github.com/lucasm/headly/wiki) for app documentation and principles.
 - [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.
 - [Projects](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
-- Code contributors: please open a new issue before send pull requests of bug fixes or features.
+- Developers: feel free to open a new issue or send pull requests for bug fixes and features.
 
 ## Legal
 
-Code is MIT licensed. All rights reserved to external news sources and their trademarks.
-
-Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo).
+Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo). All rights reserved to external news sources and their trademarks.

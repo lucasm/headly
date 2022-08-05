@@ -436,19 +436,11 @@ footer li {
 }
 footer a svg {
   width: 38px;
+  margin: 0 auto;
+  display: block;
 }
 footer a .svg {
   fill: var(--color-gray);
-}
-footer .containerLogo {
-  margin-bottom: 1rem;
-}
-footer .containerLogo form,
-footer .containerLogo svg {
-  float: none;
-  display: inline;
-  margin: 0 1rem 0;
-  vertical-align: middle;
 }
 
 footer select {

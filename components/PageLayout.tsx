@@ -65,6 +65,7 @@ export default function PageLayout(props) {
       <main>{props.children}</main>
 
       <Footer
+        title={props.title}
         edition={props.edition}
         legal={props.legal}
         credits={props.credits}

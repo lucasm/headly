@@ -119,6 +119,10 @@
     {
       "name": "Diolinux",
       "url": "https://feeds.feedburner.com/Diolinux"
+    },
+    {
+      "name": "Startups",
+      "url": "https://startups.com.br/feed/"
     }
   ],
   "biz": [
@@ -239,6 +243,18 @@
     {
       "name": "O Fuxico",
       "url": "https://www.ofuxico.com.br/feed/"
+    },
+    {
+      "name": "BCharts",
+      "url": "https://bcharts.com.br/latest.rss"
+    },
+    {
+      "name": "PAPELPOP",
+      "url": "https://www.papelpop.com/feed/"
+    },
+    {
+      "name": "POPline",
+      "url": "https://portalpopline.com.br/feed/"
     }
   ],
   "sci": [
