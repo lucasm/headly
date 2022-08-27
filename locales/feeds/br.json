@@ -82,7 +82,7 @@
   "tech": [
     {
       "name": "Tecnoblog",
-      "url": "https://feed.tecnoblog.net/feed/"
+      "url": "https://tecnoblog.net/feed/"
     },
     {
       "name": "Canaltech",
@@ -119,10 +119,6 @@
     {
       "name": "Diolinux",
       "url": "https://feeds.feedburner.com/Diolinux"
-    },
-    {
-      "name": "Startups",
-      "url": "https://startups.com.br/feed/"
     }
   ],
   "biz": [
@@ -132,7 +128,7 @@
     },
     {
       "name": "Valor",
-      "url": "https://www.valor.com.br/rss"
+      "url": "https://pox.globo.com/rss/valor"
     },
     {
       "name": "InfoMoney",
@@ -169,6 +165,10 @@
     {
       "name": "EInvestidor",
       "url": "https://einvestidor.estadao.com.br/feed/"
+    },
+    {
+      "name": "Startups",
+      "url": "https://startups.com.br/feed/"
     }
   ],
   "sport": [
@@ -264,11 +264,11 @@
     },
     {
       "name": "Revista Galileu",
-      "url": "https://pox.globo.com/rss/galileu"
+      "url": "https://revistagalileu.globo.com/rss/ultimas/feed.xml"
     },
     {
-      "name": "Ciencia Hoje",
-      "url": "https://cienciahoje.org.br/feed/"
+      "name": "Ciência Todo Dia",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCn9Erjy00mpnWeLnRqhsA1g"
     },
     {
       "name": "VivaBem",

@@ -15,7 +15,7 @@
 Trusted journalism to fight against misinformation<br>
 </p>
 
-## Breaking News Headlines App
+## 📰 News Headlines App
 
 Headly is a breaking news headlines app (Progressive Web App) internationalized and powered by trusted journalism sources and fact-checking agencieis. Headly encourages the global fighting against misinformation.
 
@@ -29,15 +29,16 @@ Headly is a breaking news headlines app (Progressive Web App) internationalized 
 
 - **Fact-check** — Features fact-checking by international recognized agencies.
 
-## Contribute
+## 🧡 Contribute
 
-You can [become a GitHub sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
+You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
 
-- [Wiki](https://github.com/lucasm/headly/wiki) for app documentation and principles.
+- [Wiki](https://github.com/lucasm/headly/wiki) for documentation.
 - [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.
 - [Projects](https://github.com/lucasm/headly/projects/1?fullscreen=true) for development backlog.
-- Developers: feel free to open a new issue or send pull requests for bug fixes and features.
 
-## Legal
+Developers, feel free to open a new issue or send pull requests for bug fixes and features.
+
+## 📜 Legal
 
 Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo). All rights reserved to external news sources and their trademarks.
