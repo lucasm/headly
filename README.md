@@ -12,7 +12,7 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
 </p>
 <p align="center">
-Trusted journalism to fight against misinformation<br>
+Trusted journalism for the critical sense<br>
 </p>
 
 ## 📰 News Headlines App
@@ -29,7 +29,7 @@ Headly is a breaking news headlines app (Progressive Web App) internationalized 
 
 - **Fact-check** — Features fact-checking by international recognized agencies.
 
-## 🧡 Contribute
+## ❤️ Contribute
 
 You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
 
@@ -41,4 +41,4 @@ Developers, feel free to open a new issue or send pull requests for bug fixes an
 
 ## 📜 Legal
 
-Author: [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo). All rights reserved to external news sources and their trademarks.
+Made by [Lucas Menezes](https://lucasm.dev/?utm_source=headly_repo). All rights reserved to external news sources and trademarks.
