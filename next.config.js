@@ -1,23 +1,20 @@
 // next.config.js
-const withPWA = require("next-pwa");
-const runtimeCaching = require("next-pwa/cache");
-// @ts-check
 
-/**
- * @type {import('next').NextConfig}
- **/
-const nextConfig = {
-  /* config options here */
-};
+const runtimeCaching = require('next-pwa/cache')
+const withPWA = require('next-pwa')({
+  dest: 'public',
+})
 
-(module.exports = withPWA({
-  i18n: {
-    locales: ["en", "pt-BR", "pt-PT"],
-    defaultLocale: "en",
-  },
+module.exports = withPWA({
+  // next.js config
   pwa: {
-    dest: "public",
+    dest: 'public',
+    register: true,
+    skipWaiting: true,
     runtimeCaching,
   },
-})),
-  nextConfig;
+  i18n: {
+    locales: ['en', 'pt-BR', 'pt-PT'],
+    defaultLocale: 'en',
+  },
+})
