@@ -105,16 +105,20 @@
       "url": "https://pox.globo.com/rss/techtudo"
     },
     {
+      "name": "Manual do Usuario",
+      "url": "https://manualdousuario.net/feed/"
+    },
+    {
       "name": "IT Forum",
       "url": "https://itforum.com.br/feed"
     },
     {
-      "name": "The Hack",
-      "url": "https://thehack.com.br/rss/"
+      "name": "Uol Tilt",
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:uol.com.br/tilt&hl=pt-BR&gl=BR"
     },
     {
-      "name": "Manual do Usuario",
-      "url": "https://manualdousuario.net/feed/"
+      "name": "TudoCelular",
+      "url": "https://www.tudocelular.com/feed/"
     },
     {
       "name": "Diolinux",
@@ -159,16 +163,17 @@
       "url": "https://investnews.com.br/feed/"
     },
     {
-      "name": "Startupi",
-      "url": "https://startupi.com.br/feed/"
-    },
-    {
       "name": "EInvestidor",
       "url": "https://einvestidor.estadao.com.br/feed/"
     },
+
     {
       "name": "Startups",
       "url": "https://startups.com.br/feed/"
+    },
+    {
+      "name": "Startupi",
+      "url": "https://startupi.com.br/feed/"
     }
   ],
   "sport": [
@@ -207,8 +212,20 @@
       "url": "https://news.google.com/rss/search?q=when:24h+allinurl:adorocinema.com&hl=pt-BR&gl=BR"
     },
     {
+      "name": "PAPELPOP",
+      "url": "https://www.papelpop.com/feed/"
+    },
+    {
+      "name": "Rolling Stone",
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:rollingstone.uol.com.br&hl=pt-BR&gl=BR"
+    },
+    {
       "name": "TMDQA",
       "url": "https://www.tenhomaisdiscosqueamigos.com/feed/"
+    },
+    {
+      "name": "Tracklist",
+      "url": "https://tracklist.com.br/feed"
     },
     {
       "name": "Jovem Nerd",
@@ -217,24 +234,16 @@
     {
       "name": "IGN",
       "url": "https://br.ign.com/feed.xml"
-    },
-    {
-      "name": "Rolling Stone",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:rollingstone.uol.com.br&hl=pt-BR&gl=BR"
-    },
-    {
-      "name": "B9",
-      "url": "https://www.b9.com.br/feed"
-    },
-    {
-      "name": "Tracklist",
-      "url": "https://tracklist.com.br/feed"
     }
   ],
   "geek": [
     {
       "name": "Gshow",
       "url": "https://pox.globo.com/rss/gshow/"
+    },
+    {
+      "name": "Uol Splash",
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:uol.com.br/splash&hl=pt-BR&gl=BR"
     },
     {
       "name": "PurePeople",
@@ -245,16 +254,12 @@
       "url": "https://www.ofuxico.com.br/feed/"
     },
     {
-      "name": "BCharts",
-      "url": "https://bcharts.com.br/latest.rss"
-    },
-    {
-      "name": "PAPELPOP",
-      "url": "https://www.papelpop.com/feed/"
-    },
-    {
       "name": "POPline",
       "url": "https://portalpopline.com.br/feed/"
+    },
+    {
+      "name": "BCharts",
+      "url": "https://bcharts.com.br/latest.rss"
     }
   ],
   "sci": [
@@ -298,6 +303,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem/"
+    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
   }
 }
