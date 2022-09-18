@@ -12,7 +12,7 @@ export default function Card(props: Props) {
   const feed = require('../locales/feeds/' + props.country + '.json')
 
   // normalize name as ID (to match with path of SVG filenames)
-  function normalizeId(string) {
+  function normalizeId(string: string) {
     let id = string
       .toLowerCase()
       .replace('í', 'i')
@@ -31,10 +31,9 @@ export default function Card(props: Props) {
 
   console.log('LAYOUT CARD MOUNTED', props.category)
 
-  //
-
   useEffect(() => {
-    setFeeds(feed[props.category].sort(() => Math.random() - 0.5))
+    setFeeds(feed[props.category])
+    // random: .sort(() => Math.random() - 0.5)
   }, [feed, feeds, props.category])
 
   return (
