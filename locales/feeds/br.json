@@ -35,7 +35,8 @@
     },
     {
       "name": "UOL",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&hl=pt-BR&gl=BR"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&hl=pt-BR&gl=BR",
+      "video": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVFbXI6Gu8U2f9Gjtxw4A-Q"
     },
     {
       "name": "O Globo",
@@ -129,7 +130,7 @@
   "biz": [
     {
       "name": "Exame",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:exame.com&hl=pt-BR&gl=BR"
+      "url": "https://exame.com/feed/"
     },
     {
       "name": "Valor",
