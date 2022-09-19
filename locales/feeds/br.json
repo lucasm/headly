@@ -2,7 +2,8 @@
   "news": [
     {
       "name": "BBC",
-      "url": "https://feeds.bbci.co.uk/portuguese/rss.xml"
+      "url": "https://feeds.bbci.co.uk/portuguese/rss.xml",
+      "video": "https://www.youtube.com/feeds/videos.xml?channel_id=UCthbIFAxbXTTQEC7EcQvP1Q"
     },
     {
       "name": "G1",
@@ -277,8 +278,8 @@
       "url": "https://revistagalileu.globo.com/rss/ultimas/feed.xml"
     },
     {
-      "name": "Ciência Todo Dia",
-      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCn9Erjy00mpnWeLnRqhsA1g"
+      "name": "Mega Curioso",
+      "url": "https://rss.megacurioso.com.br/feed"
     },
     {
       "name": "VivaBem",
@@ -291,6 +292,10 @@
     {
       "name": "Drauzio Varella",
       "url": "https://drauziovarella.uol.com.br/feed"
+    },
+    {
+      "name": "Ciência Todo Dia",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCn9Erjy00mpnWeLnRqhsA1g"
     }
   ],
   "dscvr": [
@@ -308,6 +313,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Exame Notícias| - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
+    "keywords": "/ - Exame Notícias| - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt| - HypeScience - A ciência é a grande estrela do mundo real/"
   }
 }

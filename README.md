@@ -4,7 +4,7 @@
 </a>
 </div>
 <h1 align="center">
-<a href="https://headly.app/">Headly.app</a>
+<a href="https://headly.app/">Headly</a>
 </h1>
 <p align="center">
 <img alt="Languages" src="https://img.shields.io/badge/languages available-3-ffde17">
@@ -12,10 +12,10 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
 </p>
 <p align="center">
-Trusted news for the critical sense <br>
+News for the critical sense <br>
 </p>
 
-## 📰 Headly
+## 📰 Headly.app
 
 Headly is a breaking news headlines Progressive Web App (PWA) powered by trusted journalism sources and fact-checking agencieis. Headly encourages the global fighting against misinformation.
 
