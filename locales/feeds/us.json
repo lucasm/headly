@@ -68,7 +68,7 @@
   "check": [
     {
       "name": "AFP",
-      "url": "https://factcheck.afp.com/rss.xml"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:factcheck.afp.com&ceid=US:en&hl=en-US&gl=US"
     },
     {
       "name": "FactCheck",
@@ -330,7 +330,7 @@
     },
     {
       "name": "Digg",
-      "url": "https://digg.com/rss/top.rss"
+      "url": "https://digg.com/rss/index.xml"
     },
     {
       "name": "Product Hunt",

@@ -279,7 +279,7 @@
     },
     {
       "name": "Mega Curioso",
-      "url": "https://rss.megacurioso.com.br/feed"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:megacurioso.com.br&hl=pt-BR&gl=BR"
     },
     {
       "name": "VivaBem",
@@ -300,19 +300,19 @@
   ],
   "dscvr": [
     {
+      "name": "Sensacionalista",
+      "url": "https://news.google.com/rss/search?q=allinurl:oglobo.globo.com/blogs/humor/sensacionalista&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+    },
+    {
       "name": "Reddit",
       "url": "https://www.reddit.com/r/brasil/.rss"
     },
     {
       "name": "Nao Intendo",
       "url": "https://feeds.feedburner.com/naointendo"
-    },
-    {
-      "name": "Sensacionalista",
-      "url": "https://blogs.oglobo.globo.com/sensacionalista/rss/ultimas.feed"
     }
   ],
   "filter": {
-    "keywords": "/ - Exame Notícias| - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt| - HypeScience - A ciência é a grande estrela do mundo real/"
+    "keywords": "/ - Exame Notícias| - Folha| - O Globo| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt| - Mega Curioso/"
   }
 }

@@ -19,6 +19,6 @@ export default {
   cult: 'Cultura',
   geek: 'Famosos',
   sci: 'Ciência',
-  dscvr: 'Descubra',
+  dscvr: 'Humor',
   search: 'Buscar',
 }
