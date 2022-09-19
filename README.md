@@ -12,26 +12,26 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
 </p>
 <p align="center">
-Trusted journalism for the critical sense<br>
+Trusted news for the critical sense <br>
 </p>
 
-## 📰 News Headlines App
+## 📰 Headly
 
-Headly is a breaking news headlines app (Progressive Web App) internationalized and powered by trusted journalism sources and fact-checking agencieis. Headly encourages the global fighting against misinformation.
+Headly is a breaking news headlines Progressive Web App (PWA) powered by trusted journalism sources and fact-checking agencieis. Headly encourages the global fighting against misinformation.
 
-- **Newest** — Breaking news headlines.
+- **News headlines** — Breaking news headlines.
 
-- **Trusted** — Renowned journalism sources focused in liberty of expression, critical sense, democracy and human rights.
+- **Trusted** — Renowned journalism sources focused in liberty of expression, democracy, human rights and critical sense.
 
 - **Internationalized** — Editions available by country.
 
-- **Accessibility** — Free access journalism above paywall, fast on slow internet connections and easy to read and navigate for any people.
+- **Accessible** — Free access journalism above paywall, fast on slow internet connections and high contrast.
 
-- **Fact-check** — Features fact-checking by international recognized agencies.
+- **Fact check** — Features fact-checking by international recognized agencies.
 
-## ❤️ Contribute
+## 🧡 Contribute
 
-You can [become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
+[Become a sponsor](https://github.com/sponsors/lucasm) to help maintain active development and get benefits as early Beta access!
 
 - [Wiki](https://github.com/lucasm/headly/wiki) for documentation.
 - [Discussions](https://github.com/lucasm/headly/discussions) for general topics by community.

@@ -128,7 +128,7 @@
   "biz": [
     {
       "name": "Exame",
-      "url": "https://exame.com/feed/"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:exame.com&hl=pt-BR&gl=BR"
     },
     {
       "name": "Valor",
@@ -308,6 +308,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
+    "keywords": "/ - Exame Notícias| - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
   }
 }
