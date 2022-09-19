@@ -37,16 +37,16 @@
       "url": "https://news.google.com/rss/search?q=when:24h+allinurl:noticias.uol.com.br&hl=pt-BR&gl=BR"
     },
     {
-      "name": "Revista Fórum",
-      "url": "https://revistaforum.com.br/rss/un_foto.html"
-    },
-    {
       "name": "O Globo",
       "url": "https://pox.globo.com/rss/oglobo/"
     },
     {
       "name": "Nexo Jornal",
       "url": "https://www.nexojornal.com.br/rss.xml"
+    },
+    {
+      "name": "Revista Fórum",
+      "url": "https://revistaforum.com.br/rss/un_foto.html"
     },
     {
       "name": "The Intercept",
@@ -143,16 +143,20 @@
       "url": "https://br.investing.com/rss/news.rss"
     },
     {
+      "name": "Forbes",
+      "url": "https://www.forbes.com.br/feed/"
+    },
+    {
+      "name": "Bloomberg",
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberglinea.com.br&hl=pt-BR&gl=BR"
+    },
+    {
       "name": "Money Times",
       "url": "https://www.moneytimes.com.br/feed/"
     },
     {
       "name": "Seu Dinheiro",
       "url": "https://www.seudinheiro.com/feed/"
-    },
-    {
-      "name": "Forbes",
-      "url": "https://www.forbes.com.br/feed/"
     },
     {
       "name": "NeoFeed",
@@ -186,10 +190,6 @@
       "url": "https://www.lance.com.br/rss/"
     },
     {
-      "name": "Gazeta Esportiva",
-      "url": "https://www.gazetaesportiva.com/feed/"
-    },
-    {
       "name": "TNT Sports",
       "url": "https://tntsports.com.br/rss/feed.xml"
     },
@@ -198,6 +198,11 @@
       "url": "https://www.espn.com.br/rss/pauloviniciuscoelho"
     },
     {
+      "name": "Gazeta Esportiva",
+      "url": "https://www.gazetaesportiva.com/feed/"
+    },
+
+    {
       "name": "90min",
       "url": "https://www.90min.com/pt-BR/posts.rss"
     }
@@ -205,7 +210,7 @@
   "cult": [
     {
       "name": "Omelete",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:omelete.com.br&hl=pt-BR&gl=BR"
+      "url": "https://news.google.com/rss/search?q=when:72h+allinurl:omelete.com.br&hl=pt-BR&gl=BR"
     },
     {
       "name": "AdoroCinema",
@@ -217,7 +222,7 @@
     },
     {
       "name": "Rolling Stone",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:rollingstone.uol.com.br&hl=pt-BR&gl=BR"
+      "url": "https://news.google.com/rss/search?q=when:72h+allinurl:rollingstone.uol.com.br&hl=pt-BR&gl=BR"
     },
     {
       "name": "TMDQA",
@@ -303,6 +308,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
+    "keywords": "/ - Folha| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt/"
   }
 }
