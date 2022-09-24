@@ -32,8 +32,8 @@ export default function Card(props: Props) {
   console.log('LAYOUT CARD MOUNTED', props.category)
 
   useEffect(() => {
-    // random: .sort(() => Math.random() - 0.5)
-    setFeeds(feed[props.category])
+    // random:
+    setFeeds(feed[props.category].sort(() => Math.random() - 0.5))
   }, [feed, feeds, props.category])
 
   return (

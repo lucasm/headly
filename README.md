@@ -12,7 +12,7 @@
 <img alt="Issues" src="https://img.shields.io/github/issues/lucasm/headly?color=ff4e66">
 </p>
 <p align="center">
-News for the critical sense <br>
+Trusted journalism to fight against misinformation <br>
 </p>
 
 ## 📰 Headly.app

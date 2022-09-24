@@ -57,6 +57,7 @@
   font-size: 1.25rem;
   line-height: 1.2;
   padding: 0;
+  filter: grayscale(100%);
 }
 .feed div li:nth-child(1) {
   font-size: 6vw;
