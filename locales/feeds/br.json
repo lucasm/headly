@@ -15,11 +15,11 @@
     },
     {
       "name": "CNN",
-      "url": "https://www.cnnbrasil.com.br/feed/"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:cnnbrasil.com.br&hl=pt-BR&gl=BR"
     },
     {
       "name": "Estadão",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:politica.estadao.com.br&hl=pt-BR&gl=BR"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:estadao.com.br/politica&hl=pt-BR&gl=BR"
     },
     {
       "name": "Poder360",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Revista Fórum",
-      "url": "https://revistaforum.com.br/rss/un_foto.html"
+      "url": "https://revistaforum.com.br/rss/feed.html?r=1"
     },
     {
       "name": "The Intercept",
@@ -236,7 +236,7 @@
     },
     {
       "name": "Jovem Nerd",
-      "url": "https://jovemnerd.com.br/feed/"
+      "url": "https://news.google.com/rss/search?q=when:24h+jovemnerd.com.br&hl=pt-BR&gl=BR"
     },
     {
       "name": "IGN",
@@ -276,7 +276,7 @@
     },
     {
       "name": "Revista Galileu",
-      "url": "https://revistagalileu.globo.com/rss/ultimas/feed.xml"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:revistagalileu.globo.com&hl=pt-BR&gl=BR"
     },
     {
       "name": "Mega Curioso",
@@ -295,6 +295,10 @@
       "url": "https://drauziovarella.uol.com.br/feed"
     },
     {
+      "name": "Fapesp",
+      "url": "https://revistapesquisa.fapesp.br/feed/"
+    },
+    {
       "name": "Ciência Todo Dia",
       "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCn9Erjy00mpnWeLnRqhsA1g"
     }
@@ -302,7 +306,7 @@
   "dscvr": [
     {
       "name": "Sensacionalista",
-      "url": "https://news.google.com/rss/search?q=when:96h+allinurl:oglobo.globo.com/blogs/humor/sensacionalista&hl=pt-BR&gl=BR&ceid=BR:pt-419"
+      "url": "https://news.google.com/rss/search?q=when:72h+oglobo.globo.com/blogs/humor/sensacionalista&hl=pt-BR&gl=BR"
     },
     {
       "name": "Reddit",
@@ -314,6 +318,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Exame Notícias| - Folha| - O Globo| - UOL Confere| - UOL| - Política Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - politica.estadao.com.br| - Tilt| - Mega Curioso/"
+    "keywords": "/ - Exame Notícias| - Folha| - CNN Brasil| - O Globo| - UOL Confere| - UOL| - Estadão| - Bloomberg Línea| - Omelete| - AdoroCinema| - Rolling Stone Brasil| - VivaBem| - Tilt| - Mega Curioso | - Revista Galileu| - NerdBunker - NerdBunker| - NerdBunker/"
   }
 }

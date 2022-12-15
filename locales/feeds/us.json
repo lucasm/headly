@@ -26,7 +26,7 @@
     },
     {
       "name": "The Washington Post",
-      "url": "http://feeds.washingtonpost.com/rss/world"
+      "url": "https://feeds.washingtonpost.com/rss/world"
     },
     {
       "name": "TIME",
@@ -68,7 +68,7 @@
   "check": [
     {
       "name": "AFP",
-      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:factcheck.afp.com&ceid=US:en&hl=en-US&gl=US"
+      "url": "https://rsshub.app/twitter/user/AFPFactCheck"
     },
     {
       "name": "FactCheck",
@@ -284,7 +284,7 @@
     },
     {
       "name": "Nature",
-      "url": "http://feeds.nature.com/nature/rss/current"
+      "url": "https://news.google.com/rss/search?q=when:24h+allinurl:nature.com&ceid=US:en&hl=en-US&gl=US"
     },
     {
       "name": "Science Magazine",
@@ -338,6 +338,6 @@
     }
   ],
   "filter": {
-    "keywords": "/ - Reuters| - Bloomberg|AFP | - CNET| - Bleacher Report| - IMDb| - Entertainment Weekly| - PEOPLE/"
+    "keywords": "/ - Reuters| - Bloomberg| - Forbes| - CNET| - Bleacher Report| - IMDb| - Entertainment Weekly| - PEOPLE| - Nature.com/"
   }
 }
