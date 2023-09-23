@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://headly.app/">
-<img height="128" src="https://headly.app/images/headly-logo-color.svg">
+<img height="128" src="https://headly.vercel.app/images/headly-logo-color.svg">
 </a>
 </div>
 <h1 align="center">
